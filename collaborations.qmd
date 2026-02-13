@@ -1,0 +1,60 @@
+---
+title: "Network & Affiliations"
+---
+
+My academic journey is built on strong collaborations with leading research institutions and a vibrant network of brilliant colleagues.
+
+## Research Institutions & Groups
+
+::: {layout-ncol=2}
+
+### [University of Naples Federico II](http://www.unina.it)
+**PhD & Research Home**
+<br>The oldest public non-sectarian university in the world, where I conduct my primary research in Economics and Statistics.
+
+### [Department of Economics and Statistics](http://www.dises.unina.it)
+**DISES**
+<br>My home department, a hub of excellence for economic and statistical research in Southern Italy.
+
+### [Naples School of Economics (NSE)](http://www.nse.unina.it)
+**PhD Program**
+<br>An international PhD program fostering advanced research in economics and finance.
+
+### [Leiden University](https://www.universiteitleiden.nl/en)
+**Visiting Scholar**
+<br>Department of Methodology and Statistics. I spent a visiting period here focusing on psychometrics and statistical learning.
+
+### [Bibliometrix](https://www.bibliometrix.org)
+**Core Developer Team**
+<br>An open-source R-tool for comprehensive science mapping analysis. I contribute to the development and maintenance of the package.
+
+### [K-Synth](https://www.k-synth.unina.it)
+**Academic Spin-off**
+<br>A spin-off of Federico II University focused on synthetic data generation and advanced statistical consulting.
+
+:::
+
+## Colleagues & Friends
+
+Research is a collective endeavor. I am proud to collaborate with:
+
+* **[Massimo Aria](https://massimoaria.com/index.html#header4-3)** | *Full Professor in Statistics @University of Naples, Federico II*
+* **[Antonio D'Ambrosio](http://wpage.unina.it/antdambr/)** | *Full Professor in Statistics @University of Naples, Federico II* 
+* **[Germana Scepi](https://www.docenti.unina.it/teacher/4745524d414e415343455049534350474d4e36364235384638333952/profile/references)** | *Full Professor in Statistics @University of Naples, Federico II*
+* **[Roberta Siciliano](https://www.docenti.unina.it/teacher/524f4245525441534943494c49414e4f53434c52525436344535324638333953/profile/references)** | *Full Professor in Statistics @University of Naples, Federico II*
+* **[Corrado Cuccurullo](https://www.economia.unicampania.it/dipartimento/docenti?MATRICOLA=059204)** | *Full Professor of Management @University of Naples Luigi Vanvitelli*
+* **[Marjolein Fokkema](https://onderzoek.marjoleinfokkema.nl/about)** | *Associate Professor @Leiden University*
+* **[Carmela Iorio](https://www.docenti.unina.it/carmela.iorio)** | *Associate Professor in Statistics @University of Naples, Federico II*
+* **[Giuseppe Pandolfo](https://www.docenti.unina.it/teacher/474955534550504550414e444f4c464f504e4447505038335231364437303843/profile/references)** | *Associate Professor in Statistics @University of Naples, Federico II*
+* **[Michelangelo Misuraca](https://docenti.unisa.it/028308/home)** | *Associate Professor in Statistics for Social Sciences, University of Salerno*
+* **[Luca D'Aniello](https://sites.google.com/view/lucadaniello)** | *Assistant Professor of Statistics for Social Sciences @University of Naples, Federico II*
+* **[Maria Spano](https://www.docenti.unina.it/teacher/4d415249415350414e4f53504e4d524138344435344134383954/profile/references)** | *Assistant Professor of Statistics for Social Sciences @University of Naples, Federico II*
+* **[Alessandra Belfiore](https://www.unipegaso.it/docenti/alessandra-belfiore)** | *Assistant Professor of Management @UniPegaso*
+
+
+
+
+---
+
+### Join the Network
+Are you interested in **Statistics**, **Explainable AI**, **Bibliometrics**, or **Statistical Software**? Feel free to [reach out](mailto:agostino.gnasso@unina.it) for collaborations.

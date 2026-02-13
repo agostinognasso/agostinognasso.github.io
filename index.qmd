@@ -1,0 +1,81 @@
+---
+title: "Agostino Gnasso"
+subtitle: |
+  Ph.D. in Economics
+  <br>University of Naples Federico II
+image: profileAG.png
+about:
+  template: solana
+  image-width: 12em
+  image-shape: round
+  id: hero-heading
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:agostino.gnasso@unina.it
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/agostino-gnasso/
+    - icon: github
+      text: GitHub
+      href: https://github.com/agostinognasso
+    - icon: google
+      text: Scholar
+      href: https://scholar.google.com/citations?user=cJf-OFIAAAAJ&hl=it
+    - icon: researchgate
+      text: ResearchGate
+      href: https://www.researchgate.net/profile/Agostino-Gnasso?ev=hdr_xprf
+---
+
+:::{#hero-heading}
+
+I hold a **Ph.D. in Economics** from the **University of Naples Federico II**, where I specialize in an interdisciplinary blend of **Statistical Analysis**, **Machine Learning**, and Economics. My academic journey is rooted in the pursuit of clarity and effectiveness within the rapidly evolving field of data science.
+
+### Research Focus
+
+My research primarily explores the interpretability of algorithms, specifically in the fields of **Explainable Machine Learning (XML)** and **Explainable Artificial Intelligence (XAI)**.
+As machine learning models become increasingly integral to critical decision-making in sectors like finance and healthcare, the necessity for transparency is paramount. 
+My work aims to make these powerful tools more understandable and accessible, with a keen interest in **decision-tree methods** appreciated for their simplicity and ease interpretation.
+
+### Affiliations & Contributions
+
+I am currently a member of the **Bibliometrix Research Team** and the academic spin-off **K-Synth**. Recently, I served as a **Visiting Scholar** at the Department of Methodology and Statistics at **Leiden University** (Netherlands).
+
+My contributions have been recognized in publications in several international scientific journals. Alongside a talented team of colleagues, I actively work on developing innovative **open-source software packages** for the **R** programming environment.
+
+:::
+
+## Research Interests
+
+* Explainable Artificial Intelligence (XAI)
+* Machine Learning & Ensemble models
+* Bibliometrics & Science Mapping
+* Statistical Software Development (R & Python)
+
+
+## Contacts
+
+If you want to get in touch or discuss a potential collaboration:
+
+```{r}
+#| eval: false
+#| echo: true
+print(sub(" AT ", "@", "agostino.gnasso AT unina.it"))
+```
+
+You can find me also on [LinkedIn](https://linkedin.com/in/agostino-gnasso), [GitHub](https://github.com/agostinognasso), [Google Scholar](https://scholar.google.com/citations?user=cJf-OFIAAAAJ&hl=it) and [ResearchGate](https://www.researchgate.net/profile/Agostino-Gnasso?ev=hdr_xprf).
+
+## Where
+
+I am based at the **Monte Sant'Angelo** academic complex in Naples.
+
+**Department of Economics and Statistics**
+<br>University of Naples Federico II
+
+📍 **Address:** Monte S. Angelo, Via Cinthia, 80126 Napoli, Italy.
+<br> **Office:** Room D-22, Sector D, 2nd Floor, Building 3.
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.970227189993!2d14.19082267656689!3d40.83803807137549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0927e3663a87%3A0x6b77c5968414446e!2sComplesso%20Universitario%20di%20Monte%20Sant'Angelo!5e0!3m2!1sit!2sit!4v1707840000000!5m2!1sit!2sit" width="100%" height="400" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+

@@ -1,0 +1,72 @@
+
+---
+title: "Talks & Conferences"
+---
+
+## Invited Talks & Seminars
+
+* **PhD Seminar** | October 2024
+    * *Topic:* "Explainable Ensemble Trees (E2Tree)"
+    * *Location:* University of Naples Federico II, Department of Economics and Statistics.
+
+* **STAT-TALK Colloquium** | February 2024
+    * *Topic:* "E2Tree: Explaining Decision Tree Ensembles"
+    * *Location:* Leiden University, Institute of Psychology, Methodology, and Statistics (Netherlands).
+
+## Conference Presentations
+
+**2025**
+
+* **RC33 2025** | Naples, Italy | September 2025
+    * *Session:* Sustainability and High-dimensional Data Analysis.
+    * *Paper:* From research to care: measuring the impact of AHSC on patient experience.
+
+* **CLADAG 2025** | Naples, Italy | September 2025
+    * *Session:* Recursive Partitioning and Related Methods.
+    * *Paper:* “Can You Explain That?” E2Tree, SHAP, and LIME for interpretable Random Forests.
+
+* **CLADAG 2025** | Naples, Italy | September 2025
+    * *Session:* Innovative Approaches in Machine Learning and Clustering.
+    * *Paper:* From Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics.
+
+* **IES 2025** | Brixen, Italy | June 2025
+    * *Session:* AI and Machine Learning.
+    * *Paper:* Research excellence and patient perception.
+
+**2024**
+
+* **ASA 2024** | Rome, Italy | September 2024
+    * *Session:* AI and Machine Learning.
+    * *Paper:* The evolution of Explainable Artificial Intelligence (XAI).
+* **COMPSTAT 2024** | Giessen, Germany | August 2024
+    * *Session:* High dimensional data analysis.
+    * *Paper:* Inside black-box models through explainable decision tree ensembles.
+* **SIS 2024** | Bari, Italy | June 2024
+    * *Session:* Advanced statistical methods.
+    * *Paper:* Explainable decision tree ensembles.
+* **DSSR 2024** | Naples, Italy | March 2024
+    * *Session:* Unstructured data.
+    * *Paper:* The spread of Random Forest across scientific research fields.
+
+**2023**
+
+* **CMStatistics 2023** | Berlin, Germany | December 2023
+    * *Session:* Explainability in machine learning.
+* **ICDS 2023** | Santiago of Chile | November 2023
+    * *Session:* Multiblock Methods and Supervised Learning Algorithms.
+* **PhD Workshop** | Naples, Italy | September 2023
+    * *2nd Economics and Finance Workshop for PhD Researchers.*
+
+**2022**
+
+* **ECDA 2022** | Naples, Italy | September 2022
+    * *European Conference on Data Analysis.*
+* **JADT 2022** | Naples, Italy | July 2022
+    * *16th International Conference on Statistical Analysis of Textual Data.*
+* **IES 2022** | Caserta, Italy | January 2022
+    * *Innovation & Society 5.0.*
+
+**2021**
+
+* **ASA 2021** | Florence, Italy | September 2021
+    * *Statistics and Information for Policy Evaluation.*

@@ -1,0 +1,31 @@
+---
+title: "Research"
+---
+
+My research activity focuses on **Explainable Artificial Intelligence (XAI)**, **Machine Learning**, and **Bibliometrics**, with a specific interest in developing interpretable structures for Random Forests and Ensemble Trees.
+
+## Journal Articles
+
+1.  Aria, M., **Gnasso, A.**, Iorio, C., & Fokkema, M. (2025). "Extending Explainable Ensemble Trees to Regression Contexts". *Applied Stochastic Models in Business and Industry*, 42(1), e70064. [DOI](https://doi.org/10.1002/asmb.70064)
+2.  Aria, M., **Gnasso, A.**, Rivieccio, R., & Siciliano, R. (2025). "Predicting depression in Italy using random forest through the E2Tree methodology". *Annals of Operations Research*. [DOI](https://doi.org/10.1007/s10479-025-06758-7)
+3.  Aria, M., **Gnasso, A.**, Iorio, C., & Pandolfo, G. (2024). "Explainable ensemble trees". *Computational Statistics*, 39(1), 3-19. [DOI](https://doi.org/10.1007/s00180-022-01312-6)
+4.  Aria, M., Cuccurullo, C., & **Gnasso, A.** (2021). "A comparison among interpretative proposals for Random Forests". *Machine Learning with Applications*. [DOI](https://doi.org/10.1016/j.mlwa.2021.100094)
+5.  Adamo, D., **Gnasso, A.**, et al. (2021). "Assessment of Sleep Disturbance in Oral Lichen Planus and Validation of PSQI: a case-control multicenter study". *Journal of Oral Pathology & Medicine*. [DOI](https://doi.org/10.1111/jop.13255)
+
+## Conference Proceedings
+
+* **Gnasso, A.**, & Aria, M. (2025). "Can You Explain That? E2Tree, SHAP, and LIME for Interpretable Random Forests". *CLADAG-VOC 2025*. Springer.
+* **Gnasso, A.**, Aria, M., & Siciliano, R. (2025). "From Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics". *CLADAG-VOC 2025*. Springer.
+* **Gnasso, A.**, et al. (2025). "Research excellence and patient perception: investigating the impact of AHSCs' scientific output". *IES 2025 - Innovation & Society*.
+* **Gnasso, A.**, Aria, M., Iorio, C., & Fokkema, M. (2025). "Explainable Decision Tree Ensembles". *SIS 2024 - Methodological and Applied Statistics and Demography IV*. Springer.
+* **Gnasso, A.**, & Aria, M. (2024). "The evolution of Explainable Artificial Intelligence (XAI): a preliminary systematic literature review". *ASA Conference 2024*.
+* Iorio, C., **Gnasso, A.**, & Aria, M. (2024). "Inside the black-box models through explainable decision tree ensembles". *COMPSTAT 2024*.
+* Aria, M., **Gnasso, A.**, Iorio, C., & Pandolfo, G. (2023). "Unlocking explainable in ensemble trees". *CMStatistics 2023*.
+* Aria, M., **Gnasso, A.**, & D'Aniello, L. (2022). "Twenty Years of Random Forest: preliminary results of a systematic literature review". *IES 2022*.
+* Belfiore, A., **Gnasso, A.**, Cuccurullo, C., & Aria, M. (2022). "AI and ML in accounting and finance: a bibliometric review". *JADT 2022*.
+* Aria, M., Cuccurullo, C., & **Gnasso, A.** (2021). "Supporting decision-makers in healthcare domain". *ASA 2021*.
+
+## Working Papers
+
+* **Gnasso, A.** "The evolution of Explainable Artificial Intelligence (XAI): a systematic literature review".
+* **Gnasso, A.**, Aria, M., & Iorio, C. "GoI - Goodness of Interpretability".

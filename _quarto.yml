@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Agostino Gnasso"
+  description: "PhD Candidate in Economics & Statistics"
+  site-url: https://agostinognasso.github.io
+  navbar:
+    background: dark
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Talks
+        href: talks.qmd
+      - text: Network
+        href: collaborations.qmd
+      - text: Teaching
+        href: teaching.qmd
+      - icon: github
+        href: https://github.com/agostinognasso
+      - icon: linkedin
+        href: https://linkedin.com/in/agostino-gnasso
+      - icon: envelope
+        href: mailto:agostino.gnasso@unina.it
+
+format:
+  html:
+    theme: cosmo
+    css: theme.scss
+    toc: true

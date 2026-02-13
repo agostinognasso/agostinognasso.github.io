@@ -1,0 +1,32 @@
+---
+title: "Teaching Activities"
+---
+
+My teaching experience primarily takes place at the **University of Naples Federico II**, where I support courses in Statistics, Econometrics, and Data Analysis.
+
+## Academic Courses
+
+**Teaching Assistant / Tutor** | *2020 - Present*
+<br> *Department of Economics and Statistics, University of Naples Federico II*
+
+I have been involved in teaching activities and student support for the following courses:
+
+* **Quantitative Methods**
+* **Statistical Inference**
+* **Statistical Methods for Evaluation**
+* **Data Analysis**
+* **Statistics and Time Series Analysis**
+* **Sample Surveys**
+* **Statistics for Finance**
+
+## Summer Schools & Workshops
+
+**Summer School in Science Mapping**
+*Organizing Committee Member* | *2023 - 2026*
+
+I am part of the organizing committee for the "Summer School in Science Mapping: Producing Systematic Literature Reviews with Bibliometrix and Biblioshiny". The school provides training on data science methods and bibliometric techniques.
+
+* **4th Edition:** May 2026 (upcoming) 
+* **3rd Edition:** May 2025 
+* **2nd Edition:** May 2024
+* **1st Edition:** June 2023
