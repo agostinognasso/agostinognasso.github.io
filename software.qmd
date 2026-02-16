@@ -1,0 +1,89 @@
+---
+title: "Software"
+---
+
+I actively contribute to the development of open-source software for statistical analysis and machine learning, primarily in the **R** programming environment. Below are the main packages I work on.
+
+---
+
+## e2tree <img src="https://img.shields.io/badge/CRAN-v0.2.0-blue" alt="CRAN version" style="vertical-align: middle; margin-left: 8px;"/>
+
+**Explainable Ensemble Trees**
+
+<a href="https://cran.r-project.org/package=e2tree" target="_blank"><img src="https://cranlogs.r-pkg.org/badges/grand-total/e2tree" alt="CRAN Downloads"/></a>
+<a href="https://github.com/massimoaria/e2tree" target="_blank"><img src="https://img.shields.io/github/stars/massimoaria/e2tree?style=social" alt="GitHub Stars"/></a>
+
+The `e2tree` package implements the **Explainable Ensemble Trees (E2Tree)** methodology proposed by Aria et al. (2024). It provides a novel approach to explain and interpret decision tree ensemble models — such as Random Forests and XGBoost — using a single, interpretable tree-like structure.
+
+The core idea is to generate a surrogate tree that captures the relational structure between the response variable and predictors learned by the ensemble, making complex black-box models transparent and easy to understand.
+
+**Key features:**
+
+- Explain **Random Forest** (via `randomForest` or `ranger`) and **XGBoost** models
+- Generate interpretable **dendrogram-like visualizations**
+- Compute **variable importance** measures with associated plots
+- Convert E2Tree outputs to `rpart` objects for further analysis
+- Support for both **classification** and **regression** tasks
+
+**Installation:**
+
+```r
+# Stable version from CRAN
+install.packages("e2tree")
+
+# Development version from GitHub
+devtools::install_github("massimoaria/e2tree")
+```
+
+**Quick example:**
+
+```r
+library(e2tree)
+library(randomForest)
+
+# Train a Random Forest
+rf <- randomForest(Species ~ ., data = iris)
+
+# Build the Explainable Ensemble Tree
+result <- e2tree(rf, data = iris)
+
+# Plot the interpretable tree
+plot(result)
+```
+
+**References:**
+
+- Aria, M., **Gnasso, A.**, Iorio, C., & Pandolfo, G. (2024). "Explainable ensemble trees". *Computational Statistics*, 39(1), 3-19. [DOI](https://doi.org/10.1007/s00180-022-01312-6)
+- Aria, M., **Gnasso, A.**, Iorio, C., & Fokkema, M. (2025). "Extending Explainable Ensemble Trees to Regression Contexts". *Applied Stochastic Models in Business and Industry*, 42(1), e70064. [DOI](https://doi.org/10.1002/asmb.70064)
+
+<a href="https://cran.r-project.org/package=e2tree" class="btn btn-primary btn-sm" target="_blank">CRAN</a>
+<a href="https://github.com/massimoaria/e2tree" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
+
+---
+
+## bibliometrix <img src="https://img.shields.io/badge/CRAN-v5.2.1-blue" alt="CRAN version" style="vertical-align: middle; margin-left: 8px;"/>
+
+**Comprehensive Science Mapping Analysis**
+
+<a href="https://cran.r-project.org/package=bibliometrix" target="_blank"><img src="https://cranlogs.r-pkg.org/badges/grand-total/bibliometrix" alt="CRAN Downloads"/></a>
+<a href="https://github.com/massimoaria/bibliometrix" target="_blank"><img src="https://img.shields.io/github/stars/massimoaria/bibliometrix?style=social" alt="GitHub Stars"/></a>
+
+`bibliometrix` is an R package for quantitative research in scientometrics and bibliometrics. It provides a comprehensive workflow for science mapping analysis, supporting data import from major bibliographic databases including Scopus, Web of Science, Dimensions, OpenAlex, PubMed, Cochrane Library, and Lens.
+
+As a **core developer team member**, I contribute to the development, maintenance, and evolution of the package and its web interface **Biblioshiny**.
+
+**Key features:**
+
+- Import and convert data from **7+ bibliographic databases**
+- Perform **descriptive bibliometric analysis** (author productivity, citation analysis, h-index)
+- Build **network matrices** for co-citation, coupling, collaboration, and co-word analysis
+- Generate **thematic maps**, **thematic evolution** plots, and **conceptual structure** visualizations
+- Interactive web interface via **Biblioshiny** for non-coders
+
+**Reference:**
+
+- Aria, M. & Cuccurullo, C. (2017). "bibliometrix: An R-tool for comprehensive science mapping analysis". *Journal of Informetrics*, 11(4), 959-975.
+
+<a href="https://cran.r-project.org/package=bibliometrix" class="btn btn-primary btn-sm" target="_blank">CRAN</a>
+<a href="https://github.com/massimoaria/bibliometrix" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
+<a href="https://www.bibliometrix.org" class="btn btn-outline-secondary btn-sm" target="_blank">Website</a>

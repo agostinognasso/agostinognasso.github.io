@@ -4,8 +4,9 @@ project:
 
 website:
   title: "Agostino Gnasso"
-  description: "PhD Candidate in Economics & Statistics"
+  description: "Agostino Gnasso — Researcher in Explainable AI, Machine Learning, and Statistics. University of Naples Federico II."
   site-url: https://agostinognasso.github.io
+  favicon: favicon.png
   navbar:
     background: dark
     right:
@@ -13,6 +14,8 @@ website:
         href: index.qmd
       - text: Research
         href: research.qmd
+      - text: Software
+        href: software.qmd
       - text: Talks
         href: talks.qmd
       - text: Network
@@ -28,6 +31,6 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: theme.scss
+    theme: [cosmo, theme.scss]
     toc: true
+    include-after-body: footer.html

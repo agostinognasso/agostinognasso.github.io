@@ -1,72 +1,188 @@
-
 ---
 title: "Talks & Conferences"
 ---
 
 ## Invited Talks & Seminars
 
-* **PhD Seminar** | October 2024
-    * *Topic:* "Explainable Ensemble Trees (E2Tree)"
-    * *Location:* University of Naples Federico II, Department of Economics and Statistics.
+::: {.invited-talk}
+["Explainable Ensemble Trees (E2Tree)"]{.talk-title}
 
-* **STAT-TALK Colloquium** | February 2024
-    * *Topic:* "E2Tree: Explaining Decision Tree Ensembles"
-    * *Location:* Leiden University, Institute of Psychology, Methodology, and Statistics (Netherlands).
+[University of Naples Federico II, Department of Economics and Statistics]{.talk-venue}
+
+[PhD Seminar — October 2024]{.talk-date}
+:::
+
+::: {.invited-talk}
+["E2Tree: Explaining Decision Tree Ensembles"]{.talk-title}
+
+[Leiden University, Institute of Psychology, Methodology, and Statistics (Netherlands)]{.talk-venue}
+
+[STAT-TALK Colloquium — February 2024]{.talk-date}
+:::
 
 ## Conference Presentations
 
-**2025**
+::: {.timeline}
 
-* **RC33 2025** | Naples, Italy | September 2025
-    * *Session:* Sustainability and High-dimensional Data Analysis.
-    * *Paper:* From research to care: measuring the impact of AHSC on patient experience.
+::: {.timeline-year}
+[2025]{.year-label}
 
-* **CLADAG 2025** | Naples, Italy | September 2025
-    * *Session:* Recursive Partitioning and Related Methods.
-    * *Paper:* “Can You Explain That?” E2Tree, SHAP, and LIME for interpretable Random Forests.
+::: {.timeline-item}
+[RC33 2025]{.conf-name}
 
-* **CLADAG 2025** | Naples, Italy | September 2025
-    * *Session:* Innovative Approaches in Machine Learning and Clustering.
-    * *Paper:* From Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics.
+[Naples, Italy — September 2025]{.conf-location}
 
-* **IES 2025** | Brixen, Italy | June 2025
-    * *Session:* AI and Machine Learning.
-    * *Paper:* Research excellence and patient perception.
+[Session: Sustainability and High-dimensional Data Analysis]{.conf-session}
 
-**2024**
+[From research to care: measuring the impact of AHSC on patient experience.]{.conf-paper}
+:::
 
-* **ASA 2024** | Rome, Italy | September 2024
-    * *Session:* AI and Machine Learning.
-    * *Paper:* The evolution of Explainable Artificial Intelligence (XAI).
-* **COMPSTAT 2024** | Giessen, Germany | August 2024
-    * *Session:* High dimensional data analysis.
-    * *Paper:* Inside black-box models through explainable decision tree ensembles.
-* **SIS 2024** | Bari, Italy | June 2024
-    * *Session:* Advanced statistical methods.
-    * *Paper:* Explainable decision tree ensembles.
-* **DSSR 2024** | Naples, Italy | March 2024
-    * *Session:* Unstructured data.
-    * *Paper:* The spread of Random Forest across scientific research fields.
+::: {.timeline-item}
+[CLADAG 2025]{.conf-name}
 
-**2023**
+[Naples, Italy — September 2025]{.conf-location}
 
-* **CMStatistics 2023** | Berlin, Germany | December 2023
-    * *Session:* Explainability in machine learning.
-* **ICDS 2023** | Santiago of Chile | November 2023
-    * *Session:* Multiblock Methods and Supervised Learning Algorithms.
-* **PhD Workshop** | Naples, Italy | September 2023
-    * *2nd Economics and Finance Workshop for PhD Researchers.*
+[Session: Recursive Partitioning and Related Methods]{.conf-session}
 
-**2022**
+["Can You Explain That?" E2Tree, SHAP, and LIME for interpretable Random Forests.]{.conf-paper}
+:::
 
-* **ECDA 2022** | Naples, Italy | September 2022
-    * *European Conference on Data Analysis.*
-* **JADT 2022** | Naples, Italy | July 2022
-    * *16th International Conference on Statistical Analysis of Textual Data.*
-* **IES 2022** | Caserta, Italy | January 2022
-    * *Innovation & Society 5.0.*
+::: {.timeline-item}
+[CLADAG 2025]{.conf-name}
 
-**2021**
+[Naples, Italy — September 2025]{.conf-location}
 
-* **ASA 2021** | Florence, Italy | September 2021
-    * *Statistics and Information for Policy Evaluation.*
+[Session: Innovative Approaches in Machine Learning and Clustering]{.conf-session}
+
+[From Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[IES 2025]{.conf-name}
+
+[Brixen, Italy — June 2025]{.conf-location}
+
+[Session: AI and Machine Learning]{.conf-session}
+
+[Research excellence and patient perception.]{.conf-paper}
+:::
+
+:::
+
+::: {.timeline-year}
+[2024]{.year-label}
+
+::: {.timeline-item}
+[ASA 2024]{.conf-name}
+
+[Rome, Italy — September 2024]{.conf-location}
+
+[Session: AI and Machine Learning]{.conf-session}
+
+[The evolution of Explainable Artificial Intelligence (XAI).]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[COMPSTAT 2024]{.conf-name}
+
+[Giessen, Germany — August 2024]{.conf-location}
+
+[Session: High dimensional data analysis]{.conf-session}
+
+[Inside black-box models through explainable decision tree ensembles.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[SIS 2024]{.conf-name}
+
+[Bari, Italy — June 2024]{.conf-location}
+
+[Session: Advanced statistical methods]{.conf-session}
+
+[Explainable decision tree ensembles.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[DSSR 2024]{.conf-name}
+
+[Naples, Italy — March 2024]{.conf-location}
+
+[Session: Unstructured data]{.conf-session}
+
+[The spread of Random Forest across scientific research fields.]{.conf-paper}
+:::
+
+:::
+
+::: {.timeline-year}
+[2023]{.year-label}
+
+::: {.timeline-item}
+[CMStatistics 2023]{.conf-name}
+
+[Berlin, Germany — December 2023]{.conf-location}
+
+[Session: Explainability in machine learning]{.conf-session}
+:::
+
+::: {.timeline-item}
+[ICDS 2023]{.conf-name}
+
+[Santiago of Chile — November 2023]{.conf-location}
+
+[Session: Multiblock Methods and Supervised Learning Algorithms]{.conf-session}
+:::
+
+::: {.timeline-item}
+[PhD Workshop]{.conf-name}
+
+[Naples, Italy — September 2023]{.conf-location}
+
+[2nd Economics and Finance Workshop for PhD Researchers.]{.conf-paper}
+:::
+
+:::
+
+::: {.timeline-year}
+[2022]{.year-label}
+
+::: {.timeline-item}
+[ECDA 2022]{.conf-name}
+
+[Naples, Italy — September 2022]{.conf-location}
+
+[European Conference on Data Analysis.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[JADT 2022]{.conf-name}
+
+[Naples, Italy — July 2022]{.conf-location}
+
+[16th International Conference on Statistical Analysis of Textual Data.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[IES 2022]{.conf-name}
+
+[Caserta, Italy — January 2022]{.conf-location}
+
+[Innovation & Society 5.0.]{.conf-paper}
+:::
+
+:::
+
+::: {.timeline-year}
+[2021]{.year-label}
+
+::: {.timeline-item}
+[ASA 2021]{.conf-name}
+
+[Florence, Italy — September 2021]{.conf-location}
+
+[Statistics and Information for Policy Evaluation.]{.conf-paper}
+:::
+
+:::
+
+:::

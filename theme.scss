@@ -1,72 +1,473 @@
 /*-- scss:defaults --*/
 
-// Colori principali
+// Color palette
 $primary: #0066cc !default;
+$primary-dark: #004a99 !default;
+$primary-light: #e8f2fc !default;
 $secondary: #6c757d !default;
+$accent: #00a676 !default;
 $success: #009955 !default;
 $info: #0066cc !default;
 $warning: #cc6600 !default;
 $danger: #cc0000 !default;
+$text-dark: #1a2332 !default;
+$text-muted: #5a6a7a !default;
+$bg-light: #f7f9fc !default;
+$bg-card: #ffffff !default;
 
-// Stili per i link
+// Links
 $link-color: $primary !default;
 $link-decoration: none !default;
 
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+$font-family-sans-serif: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !default;
+$font-family-monospace: 'Fira Code', 'Cascadia Code', 'Consolas', monospace !default;
+
 /*-- scss:rules --*/
 
-// Stile personalizzato per l'header "Hero"
+// ============================================================
+// ANIMATED GRADIENT HERO SECTION
+// ============================================================
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes borderGlow {
+  0%   { border-color: rgba($primary, 0.4); box-shadow: 0 0 15px rgba($primary, 0.15); }
+  50%  { border-color: rgba($accent, 0.6); box-shadow: 0 0 25px rgba($accent, 0.2); }
+  100% { border-color: rgba($primary, 0.4); box-shadow: 0 0 15px rgba($primary, 0.15); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .quarto-about-solana {
   .about-entity {
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg,
+      rgba($primary-light, 0.4) 0%,
+      rgba(255, 255, 255, 0.9) 30%,
+      rgba(255, 255, 255, 0.95) 70%,
+      rgba($primary-light, 0.3) 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite, fadeInUp 0.8s ease-out;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -1px; right: -1px; bottom: -1px; left: -1px;
+      border-radius: 17px;
+      background: linear-gradient(135deg, $primary, $accent, $primary);
+      background-size: 200% 200%;
+      animation: gradientShift 6s ease infinite;
+      z-index: -1;
+      opacity: 0.15;
+    }
+
     .about-image {
-      border: 3px solid $primary; // Bordo colorato
+      border: 3px solid rgba($primary, 0.3);
       padding: 4px;
       background: white;
-      
-      // --- INIZIO MODIFICA PER CERCHIO PERFETTO ---
-      // Imposta queste due dimensioni UGUALI al valore "image-width" del tuo index.qmd
-      width: 12em !important; 
-      height: 12em !important; 
-      
-      // Questo ritaglia la foto per riempire il cerchio senza deformarla
-      object-fit: cover !important; 
-      
-      // Questo crea la forma rotonda
-      border-radius: 50% !important; 
-      // --- FINE MODIFICA ---
+      width: 12em !important;
+      height: 12em !important;
+      object-fit: cover !important;
+      border-radius: 50% !important;
+      animation: borderGlow 4s ease-in-out infinite;
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.04);
+      }
     }
 
     .about-link {
-      // Stile dei bottoni social
-      border: 1px solid rgba($primary, 0.3);
-      border-radius: 20px;
-      padding: 0.5em 1em;
-      transition: all 0.3s ease;
+      border: 1px solid rgba($primary, 0.25);
+      border-radius: 24px;
+      padding: 0.5em 1.2em;
+      font-weight: 600;
+      font-size: 0.9em;
+      letter-spacing: 0.02em;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: -100%; width: 100%; height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(white, 0.2), transparent);
+        transition: left 0.5s;
+      }
 
       &:hover {
         background-color: $primary;
         color: white !important;
         text-decoration: none;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba($primary, 0.3);
+
+        &::before { left: 100%; }
       }
     }
   }
 }
 
-// Stile per la Navbar
-.navbar {
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
+// ============================================================
+// RESEARCH INTEREST CARDS
+// (Quarto generates: <div class="research-card"><p><span class="card-icon">...</span></p>...)
+// ============================================================
+
+.research-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0 2rem;
 }
 
-// Typography tweaks
-h1, h2, h3 {
-  color: #2c3e50;
+.research-card {
+  background: $bg-card;
+  border: 1px solid rgba($primary, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+
+  // Remove default <p> margins inside cards
+  p {
+    margin-bottom: 0.2rem;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, $primary, $accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba($primary, 0.12);
+    border-color: rgba($primary, 0.25);
+
+    &::after { transform: scaleX(1); }
+  }
+}
+
+// Span-based classes (Quarto generates <span> from [text]{.class})
+.card-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.3rem;
+  color: $primary;
+  opacity: 0.85;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: $text-dark;
+  display: block;
+}
+
+.card-desc {
+  font-size: 0.85rem;
+  color: $text-muted;
+  line-height: 1.45;
+  display: block;
+}
+
+
+// ============================================================
+// CONFERENCE TIMELINE
+// (Quarto generates: <div class="timeline-item"><p><span class="conf-name">...</span></p>...)
+// ============================================================
+
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+  margin: 1rem 0 2rem;
+
+  // Vertical line
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0.65rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, $primary, rgba($primary, 0.15));
+    border-radius: 2px;
+  }
+}
+
+.timeline-year {
+  position: relative;
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 0.5s ease-out both;
+
+  // Year dot
+  &::before {
+    content: '';
+    position: absolute;
+    left: -2.15rem;
+    top: 0.45rem;
+    width: 12px;
+    height: 12px;
+    background: $primary;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px $primary;
+    z-index: 1;
+  }
+}
+
+.year-label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: $primary;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.02em;
+  display: block;
+}
+
+.timeline-item {
+  background: $bg-card;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-left: 3px solid rgba($primary, 0.3);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.3s ease;
+
+  // Remove default <p> margins inside items
+  p {
+    margin-bottom: 0.15rem;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  &:hover {
+    border-left-color: $primary;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    transform: translateX(3px);
+  }
+}
+
+.conf-name {
+  font-weight: 700;
+  color: $text-dark;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.conf-location {
+  color: $text-muted;
+  font-size: 0.85rem;
+  display: block;
+}
+
+.conf-paper {
+  font-size: 0.88rem;
+  color: #3a4a5a;
+  font-style: italic;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.conf-session {
+  font-size: 0.82rem;
+  color: $text-muted;
+  display: block;
+}
+
+
+// ============================================================
+// INVITED TALKS SECTION
+// ============================================================
+
+.invited-talk {
+  background: linear-gradient(135deg, $primary-light, rgba($accent, 0.05));
+  border: 1px solid rgba($primary, 0.15);
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  // Remove default <p> margins
+  p {
+    margin-bottom: 0.15rem;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  &::before {
+    content: '🎤';
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    font-size: 1.3rem;
+    opacity: 0.5;
+  }
+}
+
+.talk-title {
+  font-weight: 700;
+  color: $text-dark;
+  font-size: 1rem;
+  display: block;
+}
+
+.talk-venue {
+  color: $text-muted;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.talk-date {
+  font-size: 0.82rem;
+  color: $primary;
   font-weight: 600;
+  display: block;
 }
 
-// Aggiusta i margini della pagina
+
+// ============================================================
+// NEWS / LATEST UPDATES
+// ============================================================
+
+.callout-note {
+  border-left: 3px solid $primary !important;
+  border-radius: 8px !important;
+  background: $bg-light !important;
+}
+
+
+// ============================================================
+// STRUCTURED FOOTER
+// ============================================================
+
+.site-footer {
+  background: linear-gradient(180deg, $bg-light, darken($bg-light, 3%));
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 2.5rem 0 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: $text-muted;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section {
+  h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $text-dark;
+    margin-bottom: 0.8rem;
+  }
+
+  p, a {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: $text-muted;
+  }
+
+  a {
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover { color: $primary; }
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+  }
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 1.5rem auto 0;
+  padding: 1rem 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-size: 0.82rem;
+  color: lighten($text-muted, 15%);
+}
+
+
+// ============================================================
+// NAVBAR
+// ============================================================
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  backdrop-filter: blur(10px);
+
+  .navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    transition: opacity 0.2s;
+    &:hover { opacity: 0.8; }
+  }
+}
+
+
+// ============================================================
+// TYPOGRAPHY & GLOBAL
+// ============================================================
+
 body {
   padding-top: 20px;
+  color: $text-dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  color: $text-dark;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid rgba($primary, 0.1);
 }
 
 h2 + ul li {
@@ -78,9 +479,42 @@ h2 + ul li strong a {
   color: $primary;
   text-decoration: none;
   border-bottom: 1px dotted $primary;
-  
+
   &:hover {
-    background-color: rgba($primary, 0.1);
+    background-color: rgba($primary, 0.08);
     border-bottom: 1px solid $primary;
+  }
+}
+
+// Code blocks
+pre {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+// Selection color
+::selection {
+  background: rgba($primary, 0.15);
+  color: $text-dark;
+}
+
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .research-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .timeline {
+    padding-left: 2rem;
   }
 }
