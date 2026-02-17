@@ -1,0 +1,188 @@
+---
+title: "Conferenze & Presentazioni"
+---
+
+## Seminari su Invito
+
+::: {.invited-talk}
+["Explainable Ensemble Trees (E2Tree)"]{.talk-title}
+
+[Universita degli Studi di Napoli Federico II, Dipartimento di Scienze Economiche e Statistiche]{.talk-venue}
+
+[Seminario Dottorale — Ottobre 2024]{.talk-date}
+:::
+
+::: {.invited-talk}
+["E2Tree: Explaining Decision Tree Ensembles"]{.talk-title}
+
+[Universita di Leiden, Istituto di Psicologia, Metodologia e Statistica (Paesi Bassi)]{.talk-venue}
+
+[STAT-TALK Colloquium — Febbraio 2024]{.talk-date}
+:::
+
+## Presentazioni a Conferenze
+
+::: {.timeline}
+
+::: {.timeline-year}
+[2025]{.year-label}
+
+::: {.timeline-item}
+[RC33 2025]{.conf-name}
+
+[Napoli, Italia — Settembre 2025]{.conf-location}
+
+[Sessione: Sustainability and High-dimensional Data Analysis]{.conf-session}
+
+[From research to care: measuring the impact of AHSC on patient experience.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[CLADAG 2025]{.conf-name}
+
+[Napoli, Italia — Settembre 2025]{.conf-location}
+
+[Sessione: Recursive Partitioning and Related Methods]{.conf-session}
+
+["Can You Explain That?" E2Tree, SHAP, and LIME for interpretable Random Forests.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[CLADAG 2025]{.conf-name}
+
+[Napoli, Italia — Settembre 2025]{.conf-location}
+
+[Sessione: Innovative Approaches in Machine Learning and Clustering]{.conf-session}
+
+[From Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[IES 2025]{.conf-name}
+
+[Bressanone, Italia — Giugno 2025]{.conf-location}
+
+[Sessione: AI and Machine Learning]{.conf-session}
+
+[Research excellence and patient perception.]{.conf-paper}
+:::
+
+:::
+
+::: {.timeline-year}
+[2024]{.year-label}
+
+::: {.timeline-item}
+[ASA 2024]{.conf-name}
+
+[Roma, Italia — Settembre 2024]{.conf-location}
+
+[Sessione: AI and Machine Learning]{.conf-session}
+
+[The evolution of Explainable Artificial Intelligence (XAI).]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[COMPSTAT 2024]{.conf-name}
+
+[Giessen, Germania — Agosto 2024]{.conf-location}
+
+[Sessione: High dimensional data analysis]{.conf-session}
+
+[Inside black-box models through explainable decision tree ensembles.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[SIS 2024]{.conf-name}
+
+[Bari, Italia — Giugno 2024]{.conf-location}
+
+[Sessione: Advanced statistical methods]{.conf-session}
+
+[Explainable decision tree ensembles.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[DSSR 2024]{.conf-name}
+
+[Napoli, Italia — Marzo 2024]{.conf-location}
+
+[Sessione: Unstructured data]{.conf-session}
+
+[The spread of Random Forest across scientific research fields.]{.conf-paper}
+:::
+
+:::
+
+::: {.timeline-year}
+[2023]{.year-label}
+
+::: {.timeline-item}
+[CMStatistics 2023]{.conf-name}
+
+[Berlino, Germania — Dicembre 2023]{.conf-location}
+
+[Sessione: Explainability in machine learning]{.conf-session}
+:::
+
+::: {.timeline-item}
+[ICDS 2023]{.conf-name}
+
+[Santiago del Cile — Novembre 2023]{.conf-location}
+
+[Sessione: Multiblock Methods and Supervised Learning Algorithms]{.conf-session}
+:::
+
+::: {.timeline-item}
+[Workshop Dottorale]{.conf-name}
+
+[Napoli, Italia — Settembre 2023]{.conf-location}
+
+[2° Workshop di Economia e Finanza per Dottorandi.]{.conf-paper}
+:::
+
+:::
+
+::: {.timeline-year}
+[2022]{.year-label}
+
+::: {.timeline-item}
+[ECDA 2022]{.conf-name}
+
+[Napoli, Italia — Settembre 2022]{.conf-location}
+
+[European Conference on Data Analysis.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[JADT 2022]{.conf-name}
+
+[Napoli, Italia — Luglio 2022]{.conf-location}
+
+[16a Conferenza Internazionale sull'Analisi Statistica dei Dati Testuali.]{.conf-paper}
+:::
+
+::: {.timeline-item}
+[IES 2022]{.conf-name}
+
+[Caserta, Italia — Gennaio 2022]{.conf-location}
+
+[Innovation & Society 5.0.]{.conf-paper}
+:::
+
+:::
+
+::: {.timeline-year}
+[2021]{.year-label}
+
+::: {.timeline-item}
+[ASA 2021]{.conf-name}
+
+[Firenze, Italia — Settembre 2021]{.conf-location}
+
+[Statistics and Information for Policy Evaluation.]{.conf-paper}
+:::
+
+:::
+
+:::

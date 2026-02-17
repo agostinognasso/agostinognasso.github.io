@@ -8,22 +8,23 @@ I actively contribute to the development of open-source software for statistical
 
 ## e2tree <img src="https://img.shields.io/badge/CRAN-v0.2.0-blue" alt="CRAN version" style="vertical-align: middle; margin-left: 8px;"/>
 
-**Explainable Ensemble Trees**
+### Explainable Ensemble Trees
 
-<a href="https://cran.r-project.org/package=e2tree" target="_blank"><img src="https://cranlogs.r-pkg.org/badges/grand-total/e2tree" alt="CRAN Downloads"/></a>
-<a href="https://github.com/massimoaria/e2tree" target="_blank"><img src="https://img.shields.io/github/stars/massimoaria/e2tree?style=social" alt="GitHub Stars"/></a>
+<a href="https://cran.r-project.org/package=e2tree" target="_blank"><img src="https://cranlogs.r-pkg.org/badges/grand-total/e2tree" alt="Download CRAN"/></a>
+<a href="https://github.com/massimoaria/e2tree" target="_blank"><img src="https://img.shields.io/github/stars/massimoaria/e2tree?style=social" alt="Stelle GitHub"/></a>
 
-The `e2tree` package implements the **Explainable Ensemble Trees (E2Tree)** methodology proposed by Aria et al. (2024). It provides a novel approach to explain and interpret decision tree ensemble models — such as Random Forests and XGBoost — using a single, interpretable tree-like structure.
+The `e2tree` package implements the **Explainable Ensemble Trees (E2Tree)** methodology, a global surrogate model designed to approximate the prediction mechanism of tree-based ensembles (such as Random Forests and Boosting) through a single, interpretable tree structure.
 
-The core idea is to generate a surrogate tree that captures the relational structure between the response variable and predictors learned by the ensemble, making complex black-box models transparent and easy to understand.
+Unlike traditional single decision trees (CART) that optimize a loss function directly on the data, E2Tree learns the **relational structure** established by the black-box model. It achieves this by extracting a **co-occurences matrix** from the trained ensemble, which quantifies the frequency with which observations share the same terminal nodes. Through hierarchical clustering of this matrix, E2Tree constructs a representative dendrogram that remains faithful to the complex non-linear patterns captured by the original model while ensuring transparency.
 
 **Key features:**
 
-- Explain **Random Forest** (via `randomForest` or `ranger`) and **XGBoost** models
-- Generate interpretable **dendrogram-like visualizations**
-- Compute **variable importance** measures with associated plots
-- Convert E2Tree outputs to `rpart` objects for further analysis
-- Support for both **classification** and **regression** tasks
+* **Global Interpretability:** Converts complex **Ensemble Models** into a single explanatory tree.
+* **Structure Preservation:** Uses hierarchical clustering on connectivity matrices to capture the "proximity" learned by the ensemble.
+* **Dual Mode:** Supports **Classification** (via frequency-based connectivity) and **Regression** (via weighted connectivity based on leaf predictions).
+* **Visual Insights:** Generates dendrogram-like visualizations and extracts clear decision rules (prototypes) for each cluster.
+* **Integration:** Outputs are compatible with `rpart` objects for seamless analysis.
+
 
 **Installation:**
 
@@ -32,24 +33,9 @@ The core idea is to generate a surrogate tree that captures the relational struc
 install.packages("e2tree")
 
 # Development version from GitHub
-devtools::install_github("massimoaria/e2tree")
+devtools::install_github("agostinognasso/e2tree")
 ```
 
-**Quick example:**
-
-```r
-library(e2tree)
-library(randomForest)
-
-# Train a Random Forest
-rf <- randomForest(Species ~ ., data = iris)
-
-# Build the Explainable Ensemble Tree
-result <- e2tree(rf, data = iris)
-
-# Plot the interpretable tree
-plot(result)
-```
 
 **References:**
 
@@ -57,7 +43,7 @@ plot(result)
 - Aria, M., **Gnasso, A.**, Iorio, C., & Fokkema, M. (2025). "Extending Explainable Ensemble Trees to Regression Contexts". *Applied Stochastic Models in Business and Industry*, 42(1), e70064. [DOI](https://doi.org/10.1002/asmb.70064)
 
 <a href="https://cran.r-project.org/package=e2tree" class="btn btn-primary btn-sm" target="_blank">CRAN</a>
-<a href="https://github.com/massimoaria/e2tree" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
+<a href="https://github.com/agostinognasso/e2tree" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
 
 ---
 

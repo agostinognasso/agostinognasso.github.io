@@ -1,0 +1,127 @@
+---
+title: "Agostino Gnasso"
+subtitle: |
+  Ph.D. in Economics
+  <br>Ricercatore in XAI, Machine Learning e Statistica
+
+image: ../profileAG.png
+about:
+  template: solana
+  image-width: 12em
+  image-shape: round
+  id: hero-heading
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:agostino.gnasso@unina.it
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/agostino-gnasso/
+    - icon: github
+      text: GitHub
+      href: https://github.com/agostinognasso
+    - icon: google
+      text: Scholar
+      href: https://scholar.google.com/citations?user=cJf-OFIAAAAJ&hl=it
+    - icon: researchgate
+      text: ResearchGate
+      href: https://www.researchgate.net/profile/Agostino-Gnasso?ev=hdr_xprf
+---
+
+:::{#hero-heading}
+
+Ho conseguito un **Ph.D. in Economics** presso l'**Università degli Studi di Napoli Federico II**, dove mi specializzo in un ambito interdisciplinare che unisce **Analisi Statistica**, **Machine Learning** ed Economia. Il mio percorso accademico e radicato nella ricerca di chiarezza ed efficacia nel campo in rapida evoluzione della data science.
+
+### Focus di Ricerca
+
+La mia ricerca esplora principalmente l'interpretabilita degli algoritmi, nello specifico nel campo dell'**Intelligenza Artificiale Spiegabile (XAI)**.
+Man mano che i modelli di machine learning diventano sempre piu centrali nelle decisioni critiche in settori come la finanza e la sanita, la necessita di trasparenza diventa fondamentale.
+Il mio lavoro mira a rendere questi strumenti potenti piu comprensibili e accessibili, con un particolare interesse per i **metodi basati su alberi decisionali**, apprezzati per la loro semplicita e facilita di interpretazione.
+
+### Affiliazioni e Contributi
+
+Sono attualmente membro del **Bibliometrix Research Team** e dello spin-off accademico **K-Synth**. Di recente, ho lavorato come **Visiting Scholar** presso il Dipartimento di Metodologia e Statistica dell'**Universita di Leiden** (Olanda).
+
+I miei contributi sono stati riconosciuti in pubblicazioni su diverse riviste scientifiche internazionali. Insieme a un team di colleghi di talento, lavoro attivamente allo sviluppo di innovativi **pacchetti software open-source** per l'ambiente di programmazione **R**.
+
+:::
+
+## Ultime Notizie
+
+::: {.callout-note appearance="minimal" icon=false}
+
+**Settembre 2025** — Tre paper accettati a **CLADAG 2025** e **RC33 2025** a Napoli, su interpretabilita XAI e analisi di survey sanitari.
+
+**Luglio 2025** — Nuova release di [**e2tree v0.2.0**](https://cran.r-project.org/package=e2tree) su CRAN, con supporto XGBoost ed estensioni alla regressione.
+
+**2025** — Nuovo articolo pubblicato su *Annals of Operations Research*: "Predicting depression in Italy using random forest through the E2Tree methodology". [DOI](https://doi.org/10.1007/s10479-025-06758-7)
+
+**2025** — Nuovo articolo pubblicato su *Applied Stochastic Models in Business and Industry*: "Extending Explainable Ensemble Trees to Regression Contexts". [DOI](https://doi.org/10.1002/asmb.70064)
+
+:::
+
+
+## Interessi di Ricerca
+
+::: {.research-cards}
+
+::: {.research-card}
+[🔍]{.card-icon}
+
+[AI Spiegabile (XAI)]{.card-title}
+
+[Rendere trasparenti i modelli black-box attraverso strutture ad albero interpretabili e spiegazioni visive.]{.card-desc}
+:::
+
+::: {.research-card}
+[🌲]{.card-icon}
+
+[Machine Learning & Ensemble]{.card-title}
+
+[Random Forest, XGBoost e metodi ensemble con focus sull'interpretabilita.]{.card-desc}
+:::
+
+::: {.research-card}
+[📊]{.card-icon}
+
+[Bibliometria & Science Mapping]{.card-title}
+
+[Analisi quantitativa della letteratura scientifica, reti di citazioni e trend di ricerca.]{.card-desc}
+:::
+
+::: {.research-card}
+[💻]{.card-icon}
+
+[Software Statistico (R & Python)]{.card-title}
+
+[Sviluppo di pacchetti open-source per analisi dati, XAI e ricerca bibliometrica.]{.card-desc}
+:::
+
+:::
+
+
+## Contatti
+
+Se vuoi metterti in contatto o discutere una potenziale collaborazione:
+
+```{r}
+#| eval: false
+#| echo: true
+print(sub(" AT ", "@", "agostino.gnasso AT unina.it"))
+```
+
+Puoi trovarmi anche su [LinkedIn](https://linkedin.com/in/agostino-gnasso), [GitHub](https://github.com/agostinognasso), [Google Scholar](https://scholar.google.com/citations?user=cJf-OFIAAAAJ&hl=it) e [ResearchGate](https://www.researchgate.net/profile/Agostino-Gnasso?ev=hdr_xprf).
+
+## Dove Trovarmi
+
+Mi trovo presso il complesso accademico di **Monte Sant'Angelo** a Napoli.
+
+**Dipartimento di Scienze Economiche e Statistiche**
+<br>Universita degli Studi di Napoli Federico II
+
+📍 **Indirizzo:** Monte S. Angelo, Via Cinthia, 80126 Napoli, Italia.
+<br> **Ufficio:** Stanza D-22, Settore D, 2° Piano, Edificio 3.
+
+```{=html}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.970227189993!2d14.19082267656689!3d40.83803807137549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0927e3663a87%3A0x6b77c5968414446e!2sComplesso%20Universitario%20di%20Monte%20Sant'Angelo!5e0!3m2!1sit!2sit!4v1707840000000!5m2!1sit!2sit" width="100%" height="400" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+```

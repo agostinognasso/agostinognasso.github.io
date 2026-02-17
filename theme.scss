@@ -503,9 +503,256 @@ html {
   scroll-behavior: smooth;
 }
 
+// ============================================================
+// STUDENT CONTACT SECTION
+// ============================================================
+
+.student-contact {
+  background: linear-gradient(135deg, rgba($accent, 0.06), rgba($primary-light, 0.5));
+  border: 1px solid rgba($accent, 0.2);
+  border-left: 4px solid $accent;
+  border-radius: 12px;
+  padding: 1.8rem 2rem;
+  margin: 2rem 0;
+  position: relative;
+
+  h3 {
+    color: $text-dark;
+    font-size: 1.15rem;
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  p {
+    color: $text-muted;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 0.8rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      position: relative;
+      padding-left: 1.5em;
+      margin-bottom: 0.4em;
+      font-size: 0.95rem;
+      color: $text-muted;
+
+      &::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: $accent;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.contact-btn {
+  display: inline-block;
+  background: $accent;
+  color: white !important;
+  padding: 0.6em 1.6em;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+
+  &:hover {
+    background: darken($accent, 8%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($accent, 0.3);
+  }
+}
+
+
+// ============================================================
+// CONSULTING SERVICES CARDS
+// ============================================================
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.service-card {
+  background: $bg-card;
+  border: 1px solid rgba($primary, 0.1);
+  border-radius: 12px;
+  padding: 1.8rem;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+
+  p {
+    margin-bottom: 0.3rem;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, $primary, $accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba($primary, 0.12);
+    border-color: rgba($primary, 0.25);
+
+    &::after { transform: scaleX(1); }
+  }
+}
+
+.service-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: $text-dark;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.service-desc {
+  font-size: 0.88rem;
+  color: $text-muted;
+  line-height: 1.5;
+  display: block;
+}
+
+.consulting-cta {
+  background: linear-gradient(135deg, $primary-light, rgba($accent, 0.08));
+  border: 1px solid rgba($primary, 0.15);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+
+  h3 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  p {
+    color: $text-muted;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+  }
+}
+
+.cta-btn {
+  display: inline-block;
+  background: $primary;
+  color: white !important;
+  padding: 0.7em 2em;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $primary-dark;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba($primary, 0.35);
+  }
+}
+
+
+// ============================================================
+// PROCESS STEPS
+// ============================================================
+
+.process-steps {
+  counter-reset: step-counter;
+  margin: 1.5rem 0;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem;
+  background: $bg-card;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    transform: translateX(3px);
+  }
+
+  p {
+    margin-bottom: 0.15rem;
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.step-number {
+  counter-increment: step-counter;
+  flex-shrink: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: linear-gradient(135deg, $primary, darken($primary, 10%));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-weight: 700;
+  color: $text-dark;
+  display: block;
+  font-size: 0.95rem;
+}
+
+.step-desc {
+  color: $text-muted;
+  font-size: 0.88rem;
+  display: block;
+  line-height: 1.5;
+}
+
+
 // Responsive adjustments
 @media (max-width: 768px) {
   .research-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .service-cards {
     grid-template-columns: 1fr;
   }
 

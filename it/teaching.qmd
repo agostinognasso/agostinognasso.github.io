@@ -1,0 +1,52 @@
+---
+title: "Attivita Didattiche"
+---
+
+La mia esperienza didattica si svolge principalmente presso l'**Universita degli Studi di Napoli Federico II**, dove supporto corsi di Statistica, Econometria e Analisi dei Dati.
+
+## Corsi Accademici
+
+**Assistente alla Didattica / Tutor** | *2020 - Presente*
+<br> *Dipartimento di Scienze Economiche e Statistiche, Universita degli Studi di Napoli Federico II*
+
+Sono stato coinvolto in attivita didattiche e di supporto agli studenti per i seguenti corsi:
+
+* **Metodi Quantitativi**
+* **Inferenza Statistica**
+* **Metodi Statistici per la Valutazione**
+* **Analisi dei Dati**
+* **Statistica e Analisi delle Serie Storiche**
+* **Indagini Campionarie**
+* **Statistica per la Finanza**
+
+## Summer School & Workshop
+
+**Summer School in Science Mapping**
+*Membro del Comitato Organizzativo* | *2023 - 2026*
+
+Faccio parte del comitato organizzativo della "Summer School in Science Mapping: Producing Systematic Literature Reviews with Bibliometrix and Biblioshiny". La scuola fornisce formazione su metodi di data science e tecniche bibliometriche.
+
+* **4a Edizione:** Maggio 2026 (in programma)
+* **3a Edizione:** Maggio 2025
+* **2a Edizione:** Maggio 2024
+* **1a Edizione:** Giugno 2023
+
+
+## Hai Bisogno di Aiuto? Supporto Studenti
+
+::: {.student-contact}
+
+### Tutoraggio e Assistenza Accademica
+
+Sei uno studente universitario e hai bisogno di supporto con lo studio, la tesi o i tuoi progetti accademici? Sono felice di poterti aiutare nelle seguenti aree:
+
+- Statistica, Probabilità ed Econometria
+- Analisi dei Dati con R e Python
+- Machine Learning e Modellazione Predittiva
+- Stesura della tesi e metodologia della ricerca
+- Sviluppo di progetti e lavori basati sui dati
+
+Che tu stia preparando un esame, abbia bisogno di aiuto per strutturare la tesi o voglia sviluppare un progetto di analisi dati, non esitare a contattarmi. Sarò felice di discutere come posso aiutarti.
+
+[Contattami](mailto:agostino.gnasso@outlook.it){.contact-btn}
+:::

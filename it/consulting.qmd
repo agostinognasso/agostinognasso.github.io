@@ -1,0 +1,122 @@
+---
+title: "Consulenza"
+---
+
+::: {.service-cards}
+
+::: {.service-card}
+[📊]{.service-icon}
+
+[Modellazione Statistica]{.service-title}
+
+[Analisi di regressione, test di ipotesi, progettazione di survey e metodi multivariati avanzati su misura per le tue domande di ricerca o business.]{.service-desc}
+:::
+
+::: {.service-card}
+[🤖]{.service-icon}
+
+[Machine Learning & Analisi Predittiva]{.service-title}
+
+[Sviluppo di modelli di classificazione e regressione con Random Forest, XGBoost, reti neurali e metodi ensemble con focus sull'interpretabilita.]{.service-desc}
+:::
+
+::: {.service-card}
+[🔍]{.service-icon}
+
+[AI Spiegabile (XAI)]{.service-title}
+
+[Rendere trasparenti e comprensibili i modelli black-box attraverso strutture ad albero interpretabili, valori SHAP, LIME e soluzioni XAI personalizzate.]{.service-desc}
+:::
+
+::: {.service-card}
+[📚]{.service-icon}
+
+[Bibliometria & Science Mapping]{.service-title}
+
+[Revisioni sistematiche della letteratura, analisi delle citazioni, mappatura dei trend di ricerca con Bibliometrix e Biblioshiny.]{.service-desc}
+:::
+
+::: {.service-card}
+[💻]{.service-icon}
+
+[Sviluppo R & Python]{.service-title}
+
+[Script personalizzati, pipeline dati, dashboard (Shiny, Streamlit) e sviluppo di pacchetti R/Python per workflow di analisi dati riproducibili.]{.service-desc}
+:::
+
+::: {.service-card}
+[📈]{.service-icon}
+
+[Visualizzazione Dati & Reportistica]{.service-title}
+
+[Grafici di qualita editoriale, visualizzazioni interattive e report analitici completi per comunicare efficacemente i tuoi risultati.]{.service-desc}
+:::
+
+:::
+
+
+## Come Funziona
+
+::: {.process-steps}
+
+::: {.process-step}
+[1]{.step-number}
+
+::: {.step-content}
+[Consulenza Iniziale]{.step-title}
+
+[Discutiamo i tuoi obiettivi, la disponibilita dei dati e i risultati attesi. Questo primo incontro e gratuito e senza impegno.]{.step-desc}
+:::
+:::
+
+::: {.process-step}
+[2]{.step-number}
+
+::: {.step-content}
+[Proposta & Pianificazione]{.step-title}
+
+[Preparo una proposta su misura che descrive la metodologia, le tempistiche e i deliverable del tuo progetto.]{.step-desc}
+:::
+:::
+
+::: {.process-step}
+[3]{.step-number}
+
+::: {.step-content}
+[Analisi & Sviluppo]{.step-title}
+
+[Eseguo il lavoro analitico, tenendoti aggiornato con report periodici e risultati intermedi.]{.step-desc}
+:::
+:::
+
+::: {.process-step}
+[4]{.step-number}
+
+::: {.step-content}
+[Consegna & Supporto]{.step-title}
+
+[Ricevi i deliverable finali (report, codice, modelli) insieme a documentazione e supporto post-consegna.]{.step-desc}
+:::
+:::
+
+:::
+
+
+## A Chi si Rivolge
+
+Questo servizio e pensato per:
+
+- **Aziende & Startup** che vogliono sfruttare i dati per decisioni strategiche
+- **Gruppi di Ricerca & Universita** che necessitano di supporto statistico avanzato per le pubblicazioni
+- **Professionisti Sanitari** interessati all'analisi di dati clinici e modellazione predittiva
+- **Dottorandi & Ricercatori** in cerca di orientamento metodologico per i loro progetti
+- **Istituzioni Pubbliche** che richiedono analisi basate su evidenze per la valutazione delle politiche
+
+
+::: {.consulting-cta}
+### Lavoriamo Insieme
+
+Hai un progetto in mente? Sarò felice di discuterne.
+
+[Contattami](mailto:agostino.gnasso@unina.it){.cta-btn}
+:::

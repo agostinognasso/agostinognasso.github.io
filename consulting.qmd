@@ -1,0 +1,123 @@
+---
+title: "Consulting"
+---
+
+
+::: {.service-cards}
+
+::: {.service-card}
+[📊]{.service-icon}
+
+[Statistical Modeling]{.service-title}
+
+[Regression analysis, hypothesis testing, survey design, and advanced multivariate methods tailored to your research or business questions.]{.service-desc}
+:::
+
+::: {.service-card}
+[🤖]{.service-icon}
+
+[Machine Learning & Predictive Analytics]{.service-title}
+
+[Development of classification and regression models using Random Forests, XGBoost, neural networks, and ensemble methods with a focus on interpretability.]{.service-desc}
+:::
+
+::: {.service-card}
+[🔍]{.service-icon}
+
+[Explainable AI (XAI)]{.service-title}
+
+[Making black-box models transparent and understandable through interpretable tree structures, SHAP values, LIME, and custom XAI solutions.]{.service-desc}
+:::
+
+::: {.service-card}
+[📚]{.service-icon}
+
+[Bibliometric & Science Mapping]{.service-title}
+
+[Systematic literature reviews, citation analysis, research trend mapping, and science mapping using Bibliometrix and Biblioshiny.]{.service-desc}
+:::
+
+::: {.service-card}
+[💻]{.service-icon}
+
+[R & Python Development]{.service-title}
+
+[Custom scripts, data pipelines, dashboards (Shiny, Streamlit), and R/Python package development for reproducible data analysis workflows.]{.service-desc}
+:::
+
+::: {.service-card}
+[📈]{.service-icon}
+
+[Data Visualization & Reporting]{.service-title}
+
+[Publication-quality charts, interactive visualizations, and comprehensive analytical reports to communicate your findings effectively.]{.service-desc}
+:::
+
+:::
+
+
+## How It Works
+
+::: {.process-steps}
+
+::: {.process-step}
+[1]{.step-number}
+
+::: {.step-content}
+[Initial Consultation]{.step-title}
+
+[We discuss your project goals, data availability, and expected outcomes. This first meeting is free and without commitment.]{.step-desc}
+:::
+:::
+
+::: {.process-step}
+[2]{.step-number}
+
+::: {.step-content}
+[Proposal & Planning]{.step-title}
+
+[I prepare a tailored proposal outlining the methodology, timeline, and deliverables for your project.]{.step-desc}
+:::
+:::
+
+::: {.process-step}
+[3]{.step-number}
+
+::: {.step-content}
+[Analysis & Development]{.step-title}
+
+[I carry out the analytical work, keeping you updated with regular progress reports and intermediate results.]{.step-desc}
+:::
+:::
+
+::: {.process-step}
+[4]{.step-number}
+
+::: {.step-content}
+[Delivery & Support]{.step-title}
+
+[You receive the final deliverables (reports, code, models) along with documentation and follow-up support.]{.step-desc}
+:::
+:::
+
+:::
+
+
+## Who Can Benefit
+
+This service is designed for:
+
+- **Businesses & Startups** looking to leverage data for strategic decisions
+- **Research Groups & Universities** needing advanced statistical support for publications
+- **Healthcare Professionals** interested in clinical data analysis and predictive modeling
+- **PhD Students & Researchers** seeking methodological guidance for their projects
+- **Public Institutions** requiring evidence-based analysis for policy evaluation
+
+
+::: {.consulting-cta}
+### Let's Work Together
+
+Have a project in mind? I'd be happy to discuss how I can help.
+
+[Get in Touch](mailto:agostino.gnasso@unina.it){.cta-btn}
+:::

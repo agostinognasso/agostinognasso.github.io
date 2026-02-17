@@ -1,0 +1,87 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const path = window.location.pathname;
+  const isItalian = path.includes('/it/');
+
+  // Page mapping (same filenames in both languages)
+  const pages = ['index.html','research.html','software.html','talks.html',
+                 'collaborations.html','teaching.html','consulting.html'];
+
+  // Current filename
+  let currentFile = path.split('/').pop() || 'index.html';
+  if (currentFile === '' || currentFile === '/') currentFile = 'index.html';
+
+  // --- 1. Update the language toggle link ---
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .nav-item a');
+  let langToggle = null;
+
+  navLinks.forEach(function(link) {
+    const text = link.textContent.trim();
+    if (text.includes('IT') && text.includes('\uD83C\uDDEE\uD83C\uDDF9')) {
+      langToggle = link;
+    }
+    if (text.includes('EN') && text.includes('\uD83C\uDDEC\uD83C\uDDE7')) {
+      langToggle = link;
+    }
+  });
+
+  if (isItalian) {
+    // --- On Italian page ---
+
+    // Update language toggle to point to English
+    if (langToggle) {
+      const englishFile = pages.includes(currentFile) ? currentFile : 'index.html';
+      // Go up one level from /it/ to root
+      langToggle.href = '../' + englishFile;
+      langToggle.innerHTML = '\uD83C\uDDEC\uD83C\uDDE7 EN';
+      langToggle.title = 'Switch to English';
+    }
+
+    // Update navbar page links to Italian versions
+    navLinks.forEach(function(link) {
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      // Resolve the href to get the filename
+      const hrefFile = href.split('/').pop();
+
+      if (pages.includes(hrefFile) && link !== langToggle) {
+        link.setAttribute('href', hrefFile);
+      }
+    });
+
+    // Translate navbar text for Italian pages
+    const navTextMap = {
+      'Home': 'Home',
+      'Research': 'Ricerca',
+      'Software': 'Software',
+      'Talks': 'Conferenze',
+      'Network': 'Rete',
+      'Teaching': 'Didattica',
+      'Consulting': 'Consulenza'
+    };
+
+    navLinks.forEach(function(link) {
+      const text = link.textContent.trim();
+      if (navTextMap[text]) {
+        link.textContent = navTextMap[text];
+      }
+    });
+
+    // Update site title for Italian
+    const brandLink = document.querySelector('.navbar-brand, .navbar-title');
+    if (brandLink && brandLink.getAttribute('href')) {
+      brandLink.setAttribute('href', 'index.html');
+    }
+
+  } else {
+    // --- On English page ---
+    if (langToggle) {
+      const italianFile = pages.includes(currentFile) ? currentFile : 'index.html';
+      langToggle.href = 'it/' + italianFile;
+      langToggle.innerHTML = '\uD83C\uDDEE\uD83C\uDDF9 IT';
+      langToggle.title = 'Passa alla versione italiana';
+    }
+  }
+});
+</script>

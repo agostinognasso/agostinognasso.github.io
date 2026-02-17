@@ -30,3 +30,23 @@ I am part of the organizing committee for the "Summer School in Science Mapping:
 * **3rd Edition:** May 2025 
 * **2nd Edition:** May 2024
 * **1st Edition:** June 2023
+
+
+## Need Help? Student Support
+
+::: {.student-contact}
+
+### Tutoring & Academic Assistance
+
+Are you a university student and need support with your studies, thesis, or academic projects? I can help you in the following areas:
+
+- Statistics, Probability, and Econometrics
+- Data Analysis with R and Python
+- Machine Learning and Predictive Modeling
+- Thesis writing and research methodology
+- Project development and data-driven assignments
+
+Whether you're struggling with an exam, need a hand structuring your thesis, or want to develop a data analysis project, feel free to reach out. I'm happy to discuss how I can help.
+
+[Contact Me](mailto:agostino.gnasso@outlook.it){.contact-btn}
+:::

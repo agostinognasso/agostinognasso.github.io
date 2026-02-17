@@ -56,6 +56,97 @@
     "text": "Where\nI am based at the Monte Sant’Angelo academic complex in Naples.\nDepartment of Economics and Statistics University of Naples Federico II\n📍 Address: Monte S. Angelo, Via Cinthia, 80126 Napoli, Italy.  Office: Room D-22, Sector D, 2nd Floor, Building 3."
   },
   {
+    "objectID": "it/software.html",
+    "href": "it/software.html",
+    "title": "Software",
+    "section": "",
+    "text": "Contribuisco attivamente allo sviluppo di software open-source per l’analisi statistica e il machine learning, principalmente nell’ambiente di programmazione R. Di seguito i principali pacchetti su cui lavoro."
+  },
+  {
+    "objectID": "it/software.html#e2tree",
+    "href": "it/software.html#e2tree",
+    "title": "Software",
+    "section": "e2tree ",
+    "text": "e2tree \nExplainable Ensemble Trees\n \nIl pacchetto e2tree implementa la metodologia Explainable Ensemble Trees (E2Tree), un modello surrogato globale progettato per approssimare il meccanismo di predizione degli ensemble basati su alberi (come Random Forests e Boosting) attraverso una singola struttura ad albero interpretabile.\nA differenza dei tradizionali alberi decisionali singoli (CART) che ottimizzano una funzione di perdita direttamente sui dati, E2Tree apprende la struttura relazionale stabilita dal modello black-box. Ottiene questo risultato estraendo una matrice di co-occorrenze dall’ensemble addestrato, quantificando la frequenza con cui le osservazioni condividono gli stessi nodi terminali. Attraverso il clustering gerarchico di questa matrice, E2Tree costruisce un dendrogramma rappresentativo che rimane fedele ai complessi pattern non lineari catturati dal modello originale, garantendo al contempo trasparenza.\nCaratteristiche principali:\n\nInterpretabilità Globale: Converte complessi Modelli Ensemble in un singolo albero esplicativo.\nPreservazione della Struttura: Utilizza il clustering gerarchico sulle matrici di connettività per catturare la “prossimità” appresa dall’ensemble.\nDoppia Modalità: Supporta Classificazione (tramite connettività basata sulla frequenza) e Regressione (tramite connettività pesata sulle predizioni delle foglie).\nInsight Visivi: Genera visualizzazioni simili a dendrogrammi ed estrae chiare regole decisionali (prototipi) per ogni cluster.\nIntegrazione: Gli output sono compatibili con oggetti rpart per un’analisi immediata e integrata.\n\nInstallazione:\n# Versione stabile da CRAN\ninstall.packages(\"e2tree\")\n\n# Versione di sviluppo da GitHub\ndevtools::install_github(\"massimoaria/e2tree\")\nEsempio rapido:\nlibrary(e2tree)\nlibrary(randomForest)\n\n# Addestramento di una Random Forest\nrf &lt;- randomForest(Species ~ ., data = iris)\n\n# Costruzione dell'Explainable Ensemble Tree\nresult &lt;- e2tree(rf, data = iris)\n\n# Visualizzazione dell'albero interpretabile\nplot(result)\nRiferimenti:\n\nAria, M., Gnasso, A., Iorio, C., & Pandolfo, G. (2024). “Explainable ensemble trees”. Computational Statistics, 39(1), 3-19. DOI\nAria, M., Gnasso, A., Iorio, C., & Fokkema, M. (2025). “Extending Explainable Ensemble Trees to Regression Contexts”. Applied Stochastic Models in Business and Industry, 42(1), e70064. DOI\n\nCRAN GitHub"
+  },
+  {
+    "objectID": "it/software.html#bibliometrix",
+    "href": "it/software.html#bibliometrix",
+    "title": "Software",
+    "section": "bibliometrix ",
+    "text": "bibliometrix \nComprehensive Science Mapping Analysis\n \nbibliometrix e un pacchetto R per la ricerca quantitativa in scientometria e bibliometria. Fornisce un workflow completo per l’analisi di science mapping, supportando l’importazione di dati dai principali database bibliografici tra cui Scopus, Web of Science, Dimensions, OpenAlex, PubMed, Cochrane Library e Lens.\nCome membro del core developer team, contribuisco allo sviluppo, alla manutenzione e all’evoluzione del pacchetto e della sua interfaccia web Biblioshiny.\nCaratteristiche principali:\n\nImportazione e conversione dati da 7+ database bibliografici\nAnalisi bibliometrica descrittiva (produttivita degli autori, analisi citazionale, h-index)\nCostruzione di matrici di rete per co-citazione, coupling, collaborazione e analisi co-word\nGenerazione di mappe tematiche, grafici di evoluzione tematica e visualizzazioni della struttura concettuale\nInterfaccia web interattiva tramite Biblioshiny per utenti non programmatori\n\nRiferimento:\n\nAria, M. & Cuccurullo, C. (2017). “bibliometrix: An R-tool for comprehensive science mapping analysis”. Journal of Informetrics, 11(4), 959-975.\n\nCRAN GitHub Sito Web"
+  },
+  {
+    "objectID": "it/talks.html",
+    "href": "it/talks.html",
+    "title": "Conferenze & Presentazioni",
+    "section": "",
+    "text": "“Explainable Ensemble Trees (E2Tree)”\nUniversita degli Studi di Napoli Federico II, Dipartimento di Scienze Economiche e Statistiche\nSeminario Dottorale — Ottobre 2024\n\n\n“E2Tree: Explaining Decision Tree Ensembles”\nUniversita di Leiden, Istituto di Psicologia, Metodologia e Statistica (Paesi Bassi)\nSTAT-TALK Colloquium — Febbraio 2024"
+  },
+  {
+    "objectID": "it/talks.html#seminari-su-invito",
+    "href": "it/talks.html#seminari-su-invito",
+    "title": "Conferenze & Presentazioni",
+    "section": "",
+    "text": "“Explainable Ensemble Trees (E2Tree)”\nUniversita degli Studi di Napoli Federico II, Dipartimento di Scienze Economiche e Statistiche\nSeminario Dottorale — Ottobre 2024\n\n\n“E2Tree: Explaining Decision Tree Ensembles”\nUniversita di Leiden, Istituto di Psicologia, Metodologia e Statistica (Paesi Bassi)\nSTAT-TALK Colloquium — Febbraio 2024"
+  },
+  {
+    "objectID": "it/talks.html#presentazioni-a-conferenze",
+    "href": "it/talks.html#presentazioni-a-conferenze",
+    "title": "Conferenze & Presentazioni",
+    "section": "Presentazioni a Conferenze",
+    "text": "Presentazioni a Conferenze\n\n\n2025\n\nRC33 2025\nNapoli, Italia — Settembre 2025\nSessione: Sustainability and High-dimensional Data Analysis\nFrom research to care: measuring the impact of AHSC on patient experience.\n\n\nCLADAG 2025\nNapoli, Italia — Settembre 2025\nSessione: Recursive Partitioning and Related Methods\n“Can You Explain That?” E2Tree, SHAP, and LIME for interpretable Random Forests.\n\n\nCLADAG 2025\nNapoli, Italia — Settembre 2025\nSessione: Innovative Approaches in Machine Learning and Clustering\nFrom Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics.\n\n\nIES 2025\nBressanone, Italia — Giugno 2025\nSessione: AI and Machine Learning\nResearch excellence and patient perception.\n\n\n\n2024\n\nASA 2024\nRoma, Italia — Settembre 2024\nSessione: AI and Machine Learning\nThe evolution of Explainable Artificial Intelligence (XAI).\n\n\nCOMPSTAT 2024\nGiessen, Germania — Agosto 2024\nSessione: High dimensional data analysis\nInside black-box models through explainable decision tree ensembles.\n\n\nSIS 2024\nBari, Italia — Giugno 2024\nSessione: Advanced statistical methods\nExplainable decision tree ensembles.\n\n\nDSSR 2024\nNapoli, Italia — Marzo 2024\nSessione: Unstructured data\nThe spread of Random Forest across scientific research fields.\n\n\n\n2023\n\nCMStatistics 2023\nBerlino, Germania — Dicembre 2023\nSessione: Explainability in machine learning\n\n\nICDS 2023\nSantiago del Cile — Novembre 2023\nSessione: Multiblock Methods and Supervised Learning Algorithms\n\n\nWorkshop Dottorale\nNapoli, Italia — Settembre 2023\n2° Workshop di Economia e Finanza per Dottorandi.\n\n\n\n2022\n\nECDA 2022\nNapoli, Italia — Settembre 2022\nEuropean Conference on Data Analysis.\n\n\nJADT 2022\nNapoli, Italia — Luglio 2022\n16a Conferenza Internazionale sull’Analisi Statistica dei Dati Testuali.\n\n\nIES 2022\nCaserta, Italia — Gennaio 2022\nInnovation & Society 5.0.\n\n\n\n2021\n\nASA 2021\nFirenze, Italia — Settembre 2021\nStatistics and Information for Policy Evaluation."
+  },
+  {
+    "objectID": "it/research.html",
+    "href": "it/research.html",
+    "title": "Ricerca",
+    "section": "",
+    "text": "La mia attivita di ricerca si concentra sull’Intelligenza Artificiale Spiegabile (XAI), il Machine Learning e la Bibliometria, con un interesse specifico nello sviluppo di strutture interpretabili per Random Forest e Alberi Ensemble."
+  },
+  {
+    "objectID": "it/research.html#articoli-su-riviste",
+    "href": "it/research.html#articoli-su-riviste",
+    "title": "Ricerca",
+    "section": "Articoli su Riviste",
+    "text": "Articoli su Riviste\n\nAria, M., Gnasso, A., Iorio, C., & Fokkema, M. (2025). “Extending Explainable Ensemble Trees to Regression Contexts”. Applied Stochastic Models in Business and Industry, 42(1), e70064. DOI\nAria, M., Gnasso, A., Rivieccio, R., & Siciliano, R. (2025). “Predicting depression in Italy using random forest through the E2Tree methodology”. Annals of Operations Research. DOI\nAria, M., Gnasso, A., Iorio, C., & Pandolfo, G. (2024). “Explainable ensemble trees”. Computational Statistics, 39(1), 3-19. DOI\nAria, M., Cuccurullo, C., & Gnasso, A. (2021). “A comparison among interpretative proposals for Random Forests”. Machine Learning with Applications. DOI\nAdamo, D., Gnasso, A., et al. (2021). “Assessment of Sleep Disturbance in Oral Lichen Planus and Validation of PSQI: a case-control multicenter study”. Journal of Oral Pathology & Medicine. DOI"
+  },
+  {
+    "objectID": "it/research.html#atti-di-conferenza",
+    "href": "it/research.html#atti-di-conferenza",
+    "title": "Ricerca",
+    "section": "Atti di Conferenza",
+    "text": "Atti di Conferenza\n\nGnasso, A., & Aria, M. (2025). “Can You Explain That? E2Tree, SHAP, and LIME for Interpretable Random Forests”. CLADAG-VOC 2025. Springer.\nGnasso, A., Aria, M., & Siciliano, R. (2025). “From Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics”. CLADAG-VOC 2025. Springer.\nGnasso, A., et al. (2025). “Research excellence and patient perception: investigating the impact of AHSCs’ scientific output”. IES 2025 - Innovation & Society.\nGnasso, A., Aria, M., Iorio, C., & Fokkema, M. (2025). “Explainable Decision Tree Ensembles”. SIS 2024 - Methodological and Applied Statistics and Demography IV. Springer.\nGnasso, A., & Aria, M. (2024). “The evolution of Explainable Artificial Intelligence (XAI): a preliminary systematic literature review”. ASA Conference 2024.\nIorio, C., Gnasso, A., & Aria, M. (2024). “Inside the black-box models through explainable decision tree ensembles”. COMPSTAT 2024.\nAria, M., Gnasso, A., Iorio, C., & Pandolfo, G. (2023). “Unlocking explainable in ensemble trees”. CMStatistics 2023.\nAria, M., Gnasso, A., & D’Aniello, L. (2022). “Twenty Years of Random Forest: preliminary results of a systematic literature review”. IES 2022.\nBelfiore, A., Gnasso, A., Cuccurullo, C., & Aria, M. (2022). “AI and ML in accounting and finance: a bibliometric review”. JADT 2022.\nAria, M., Cuccurullo, C., & Gnasso, A. (2021). “Supporting decision-makers in healthcare domain”. ASA 2021."
+  },
+  {
+    "objectID": "it/research.html#working-papers",
+    "href": "it/research.html#working-papers",
+    "title": "Ricerca",
+    "section": "Working Papers",
+    "text": "Working Papers\n\nGnasso, A. “The evolution of Explainable Artificial Intelligence (XAI): a systematic literature review”.\nGnasso, A., Aria, M., & Iorio, C. “GoI - Goodness of Interpretability”."
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks & Conferences",
+    "section": "",
+    "text": "“Explainable Ensemble Trees (E2Tree)”\nUniversity of Naples Federico II, Department of Economics and Statistics\nPhD Seminar — October 2024\n\n\n“E2Tree: Explaining Decision Tree Ensembles”\nLeiden University, Institute of Psychology, Methodology, and Statistics (Netherlands)\nSTAT-TALK Colloquium — February 2024"
+  },
+  {
+    "objectID": "talks.html#invited-talks-seminars",
+    "href": "talks.html#invited-talks-seminars",
+    "title": "Talks & Conferences",
+    "section": "",
+    "text": "“Explainable Ensemble Trees (E2Tree)”\nUniversity of Naples Federico II, Department of Economics and Statistics\nPhD Seminar — October 2024\n\n\n“E2Tree: Explaining Decision Tree Ensembles”\nLeiden University, Institute of Psychology, Methodology, and Statistics (Netherlands)\nSTAT-TALK Colloquium — February 2024"
+  },
+  {
+    "objectID": "talks.html#conference-presentations",
+    "href": "talks.html#conference-presentations",
+    "title": "Talks & Conferences",
+    "section": "Conference Presentations",
+    "text": "Conference Presentations\n\n\n2025\n\nRC33 2025\nNaples, Italy — September 2025\nSession: Sustainability and High-dimensional Data Analysis\nFrom research to care: measuring the impact of AHSC on patient experience.\n\n\nCLADAG 2025\nNaples, Italy — September 2025\nSession: Recursive Partitioning and Related Methods\n“Can You Explain That?” E2Tree, SHAP, and LIME for interpretable Random Forests.\n\n\nCLADAG 2025\nNaples, Italy — September 2025\nSession: Innovative Approaches in Machine Learning and Clustering\nFrom Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics.\n\n\nIES 2025\nBrixen, Italy — June 2025\nSession: AI and Machine Learning\nResearch excellence and patient perception.\n\n\n\n2024\n\nASA 2024\nRome, Italy — September 2024\nSession: AI and Machine Learning\nThe evolution of Explainable Artificial Intelligence (XAI).\n\n\nCOMPSTAT 2024\nGiessen, Germany — August 2024\nSession: High dimensional data analysis\nInside black-box models through explainable decision tree ensembles.\n\n\nSIS 2024\nBari, Italy — June 2024\nSession: Advanced statistical methods\nExplainable decision tree ensembles.\n\n\nDSSR 2024\nNaples, Italy — March 2024\nSession: Unstructured data\nThe spread of Random Forest across scientific research fields.\n\n\n\n2023\n\nCMStatistics 2023\nBerlin, Germany — December 2023\nSession: Explainability in machine learning\n\n\nICDS 2023\nSantiago of Chile — November 2023\nSession: Multiblock Methods and Supervised Learning Algorithms\n\n\nPhD Workshop\nNaples, Italy — September 2023\n2nd Economics and Finance Workshop for PhD Researchers.\n\n\n\n2022\n\nECDA 2022\nNaples, Italy — September 2022\nEuropean Conference on Data Analysis.\n\n\nJADT 2022\nNaples, Italy — July 2022\n16th International Conference on Statistical Analysis of Textual Data.\n\n\nIES 2022\nCaserta, Italy — January 2022\nInnovation & Society 5.0.\n\n\n\n2021\n\nASA 2021\nFlorence, Italy — September 2021\nStatistics and Information for Policy Evaluation."
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -105,25 +196,137 @@
     "text": "Summer Schools & Workshops\nSummer School in Science Mapping Organizing Committee Member | 2023 - 2026\nI am part of the organizing committee for the “Summer School in Science Mapping: Producing Systematic Literature Reviews with Bibliometrix and Biblioshiny”. The school provides training on data science methods and bibliometric techniques.\n\n4th Edition: May 2026 (upcoming)\n3rd Edition: May 2025\n2nd Edition: May 2024\n1st Edition: June 2023"
   },
   {
-    "objectID": "talks.html",
-    "href": "talks.html",
-    "title": "Talks & Conferences",
-    "section": "",
-    "text": "“Explainable Ensemble Trees (E2Tree)”\nUniversity of Naples Federico II, Department of Economics and Statistics\nPhD Seminar — October 2024\n\n\n“E2Tree: Explaining Decision Tree Ensembles”\nLeiden University, Institute of Psychology, Methodology, and Statistics (Netherlands)\nSTAT-TALK Colloquium — February 2024"
+    "objectID": "teaching.html#need-help-student-support",
+    "href": "teaching.html#need-help-student-support",
+    "title": "Teaching Activities",
+    "section": "Need Help? Student Support",
+    "text": "Need Help? Student Support\n\nTutoring & Academic Assistance\nAre you a university student and need support with your studies, thesis, or academic projects? I can help you in the following areas:\n\nStatistics, Probability, and Econometrics\nData Analysis with R and Python\nMachine Learning and Predictive Modeling\nThesis writing and research methodology\nProject development and data-driven assignments\n\nWhether you’re struggling with an exam, need a hand structuring your thesis, or want to develop a data analysis project, feel free to reach out. I’m happy to discuss how I can help.\nContact Me"
   },
   {
-    "objectID": "talks.html#invited-talks-seminars",
-    "href": "talks.html#invited-talks-seminars",
-    "title": "Talks & Conferences",
+    "objectID": "consulting.html",
+    "href": "consulting.html",
+    "title": "Consulting",
     "section": "",
-    "text": "“Explainable Ensemble Trees (E2Tree)”\nUniversity of Naples Federico II, Department of Economics and Statistics\nPhD Seminar — October 2024\n\n\n“E2Tree: Explaining Decision Tree Ensembles”\nLeiden University, Institute of Psychology, Methodology, and Statistics (Netherlands)\nSTAT-TALK Colloquium — February 2024"
+    "text": "📊\nStatistical Modeling\nRegression analysis, hypothesis testing, survey design, and advanced multivariate methods tailored to your research or business questions.\n\n\n🤖\nMachine Learning & Predictive Analytics\nDevelopment of classification and regression models using Random Forests, XGBoost, neural networks, and ensemble methods with a focus on interpretability.\n\n\n🔍\nExplainable AI (XAI)\nMaking black-box models transparent and understandable through interpretable tree structures, SHAP values, LIME, and custom XAI solutions.\n\n\n📚\nBibliometric & Science Mapping\nSystematic literature reviews, citation analysis, research trend mapping, and science mapping using Bibliometrix and Biblioshiny.\n\n\n💻\nR & Python Development\nCustom scripts, data pipelines, dashboards (Shiny, Streamlit), and R/Python package development for reproducible data analysis workflows.\n\n\n📈\nData Visualization & Reporting\nPublication-quality charts, interactive visualizations, and comprehensive analytical reports to communicate your findings effectively."
   },
   {
-    "objectID": "talks.html#conference-presentations",
-    "href": "talks.html#conference-presentations",
-    "title": "Talks & Conferences",
-    "section": "Conference Presentations",
-    "text": "Conference Presentations\n\n\n2025\n\nRC33 2025\nNaples, Italy — September 2025\nSession: Sustainability and High-dimensional Data Analysis\nFrom research to care: measuring the impact of AHSC on patient experience.\n\n\nCLADAG 2025\nNaples, Italy — September 2025\nSession: Recursive Partitioning and Related Methods\n“Can You Explain That?” E2Tree, SHAP, and LIME for interpretable Random Forests.\n\n\nCLADAG 2025\nNaples, Italy — September 2025\nSession: Innovative Approaches in Machine Learning and Clustering\nFrom Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics.\n\n\nIES 2025\nBrixen, Italy — June 2025\nSession: AI and Machine Learning\nResearch excellence and patient perception.\n\n\n\n2024\n\nASA 2024\nRome, Italy — September 2024\nSession: AI and Machine Learning\nThe evolution of Explainable Artificial Intelligence (XAI).\n\n\nCOMPSTAT 2024\nGiessen, Germany — August 2024\nSession: High dimensional data analysis\nInside black-box models through explainable decision tree ensembles.\n\n\nSIS 2024\nBari, Italy — June 2024\nSession: Advanced statistical methods\nExplainable decision tree ensembles.\n\n\nDSSR 2024\nNaples, Italy — March 2024\nSession: Unstructured data\nThe spread of Random Forest across scientific research fields.\n\n\n\n2023\n\nCMStatistics 2023\nBerlin, Germany — December 2023\nSession: Explainability in machine learning\n\n\nICDS 2023\nSantiago of Chile — November 2023\nSession: Multiblock Methods and Supervised Learning Algorithms\n\n\nPhD Workshop\nNaples, Italy — September 2023\n2nd Economics and Finance Workshop for PhD Researchers.\n\n\n\n2022\n\nECDA 2022\nNaples, Italy — September 2022\nEuropean Conference on Data Analysis.\n\n\nJADT 2022\nNaples, Italy — July 2022\n16th International Conference on Statistical Analysis of Textual Data.\n\n\nIES 2022\nCaserta, Italy — January 2022\nInnovation & Society 5.0.\n\n\n\n2021\n\nASA 2021\nFlorence, Italy — September 2021\nStatistics and Information for Policy Evaluation."
+    "objectID": "consulting.html#how-it-works",
+    "href": "consulting.html#how-it-works",
+    "title": "Consulting",
+    "section": "How It Works",
+    "text": "How It Works\n\n\n1\n\nInitial Consultation\nWe discuss your project goals, data availability, and expected outcomes. This first meeting is free and without commitment.\n\n\n\n2\n\nProposal & Planning\nI prepare a tailored proposal outlining the methodology, timeline, and deliverables for your project.\n\n\n\n3\n\nAnalysis & Development\nI carry out the analytical work, keeping you updated with regular progress reports and intermediate results.\n\n\n\n4\n\nDelivery & Support\nYou receive the final deliverables (reports, code, models) along with documentation and follow-up support."
+  },
+  {
+    "objectID": "consulting.html#who-can-benefit",
+    "href": "consulting.html#who-can-benefit",
+    "title": "Consulting",
+    "section": "Who Can Benefit",
+    "text": "Who Can Benefit\nThis service is designed for:\n\nBusinesses & Startups looking to leverage data for strategic decisions\nResearch Groups & Universities needing advanced statistical support for publications\nHealthcare Professionals interested in clinical data analysis and predictive modeling\nPhD Students & Researchers seeking methodological guidance for their projects\nPublic Institutions requiring evidence-based analysis for policy evaluation\n\n\nLet’s Work Together\nHave a project in mind? I’d be happy to discuss how I can help.\nGet in Touch"
+  },
+  {
+    "objectID": "it/teaching.html",
+    "href": "it/teaching.html",
+    "title": "Attivita Didattiche",
+    "section": "",
+    "text": "La mia esperienza didattica si svolge principalmente presso l’Universita degli Studi di Napoli Federico II, dove supporto corsi di Statistica, Econometria e Analisi dei Dati."
+  },
+  {
+    "objectID": "it/teaching.html#corsi-accademici",
+    "href": "it/teaching.html#corsi-accademici",
+    "title": "Attivita Didattiche",
+    "section": "Corsi Accademici",
+    "text": "Corsi Accademici\nAssistente alla Didattica / Tutor | 2020 - Presente  Dipartimento di Scienze Economiche e Statistiche, Universita degli Studi di Napoli Federico II\nSono stato coinvolto in attivita didattiche e di supporto agli studenti per i seguenti corsi:\n\nMetodi Quantitativi\nInferenza Statistica\nMetodi Statistici per la Valutazione\nAnalisi dei Dati\nStatistica e Analisi delle Serie Storiche\nIndagini Campionarie\nStatistica per la Finanza"
+  },
+  {
+    "objectID": "it/teaching.html#summer-school-workshop",
+    "href": "it/teaching.html#summer-school-workshop",
+    "title": "Attivita Didattiche",
+    "section": "Summer School & Workshop",
+    "text": "Summer School & Workshop\nSummer School in Science Mapping Membro del Comitato Organizzativo | 2023 - 2026\nFaccio parte del comitato organizzativo della “Summer School in Science Mapping: Producing Systematic Literature Reviews with Bibliometrix and Biblioshiny”. La scuola fornisce formazione su metodi di data science e tecniche bibliometriche.\n\n4a Edizione: Maggio 2026 (in programma)\n3a Edizione: Maggio 2025\n2a Edizione: Maggio 2024\n1a Edizione: Giugno 2023"
+  },
+  {
+    "objectID": "it/teaching.html#hai-bisogno-di-aiuto-supporto-studenti",
+    "href": "it/teaching.html#hai-bisogno-di-aiuto-supporto-studenti",
+    "title": "Attivita Didattiche",
+    "section": "Hai Bisogno di Aiuto? Supporto Studenti",
+    "text": "Hai Bisogno di Aiuto? Supporto Studenti\n\nTutoraggio e Assistenza Accademica\nSei uno studente universitario e hai bisogno di supporto con lo studio, la tesi o i tuoi progetti accademici? Sono felice di poterti aiutare nelle seguenti aree:\n\nStatistica, Probabilità ed Econometria\nAnalisi dei Dati con R e Python\nMachine Learning e Modellazione Predittiva\nStesura della tesi e metodologia della ricerca\nSviluppo di progetti e lavori basati sui dati\n\nChe tu stia preparando un esame, abbia bisogno di aiuto per strutturare la tesi o voglia sviluppare un progetto di analisi dati, non esitare a contattarmi. Sarò felice di discutere come posso aiutarti.\nContattami"
+  },
+  {
+    "objectID": "it/consulting.html",
+    "href": "it/consulting.html",
+    "title": "Consulenza",
+    "section": "",
+    "text": "📊\nModellazione Statistica\nAnalisi di regressione, test di ipotesi, progettazione di survey e metodi multivariati avanzati su misura per le tue domande di ricerca o business.\n\n\n🤖\nMachine Learning & Analisi Predittiva\nSviluppo di modelli di classificazione e regressione con Random Forest, XGBoost, reti neurali e metodi ensemble con focus sull’interpretabilita.\n\n\n🔍\nAI Spiegabile (XAI)\nRendere trasparenti e comprensibili i modelli black-box attraverso strutture ad albero interpretabili, valori SHAP, LIME e soluzioni XAI personalizzate.\n\n\n📚\nBibliometria & Science Mapping\nRevisioni sistematiche della letteratura, analisi delle citazioni, mappatura dei trend di ricerca con Bibliometrix e Biblioshiny.\n\n\n💻\nSviluppo R & Python\nScript personalizzati, pipeline dati, dashboard (Shiny, Streamlit) e sviluppo di pacchetti R/Python per workflow di analisi dati riproducibili.\n\n\n📈\nVisualizzazione Dati & Reportistica\nGrafici di qualita editoriale, visualizzazioni interattive e report analitici completi per comunicare efficacemente i tuoi risultati."
+  },
+  {
+    "objectID": "it/consulting.html#come-funziona",
+    "href": "it/consulting.html#come-funziona",
+    "title": "Consulenza",
+    "section": "Come Funziona",
+    "text": "Come Funziona\n\n\n1\n\nConsulenza Iniziale\nDiscutiamo i tuoi obiettivi, la disponibilita dei dati e i risultati attesi. Questo primo incontro e gratuito e senza impegno.\n\n\n\n2\n\nProposta & Pianificazione\nPreparo una proposta su misura che descrive la metodologia, le tempistiche e i deliverable del tuo progetto.\n\n\n\n3\n\nAnalisi & Sviluppo\nEseguo il lavoro analitico, tenendoti aggiornato con report periodici e risultati intermedi.\n\n\n\n4\n\nConsegna & Supporto\nRicevi i deliverable finali (report, codice, modelli) insieme a documentazione e supporto post-consegna."
+  },
+  {
+    "objectID": "it/consulting.html#a-chi-si-rivolge",
+    "href": "it/consulting.html#a-chi-si-rivolge",
+    "title": "Consulenza",
+    "section": "A Chi si Rivolge",
+    "text": "A Chi si Rivolge\nQuesto servizio e pensato per:\n\nAziende & Startup che vogliono sfruttare i dati per decisioni strategiche\nGruppi di Ricerca & Universita che necessitano di supporto statistico avanzato per le pubblicazioni\nProfessionisti Sanitari interessati all’analisi di dati clinici e modellazione predittiva\nDottorandi & Ricercatori in cerca di orientamento metodologico per i loro progetti\nIstituzioni Pubbliche che richiedono analisi basate su evidenze per la valutazione delle politiche\n\n\nLavoriamo Insieme\nHai un progetto in mente? Sarò felice di discuterne.\nContattami"
+  },
+  {
+    "objectID": "it/index.html",
+    "href": "it/index.html",
+    "title": "Agostino Gnasso",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Scholar\n  \n  \n    \n     ResearchGate\n  \n\n      \nHo conseguito un Ph.D. in Economics presso l’Università degli Studi di Napoli Federico II, dove mi specializzo in un ambito interdisciplinare che unisce Analisi Statistica, Machine Learning ed Economia. Il mio percorso accademico e radicato nella ricerca di chiarezza ed efficacia nel campo in rapida evoluzione della data science.\n\n\nLa mia ricerca esplora principalmente l’interpretabilita degli algoritmi, nello specifico nel campo dell’Intelligenza Artificiale Spiegabile (XAI). Man mano che i modelli di machine learning diventano sempre piu centrali nelle decisioni critiche in settori come la finanza e la sanita, la necessita di trasparenza diventa fondamentale. Il mio lavoro mira a rendere questi strumenti potenti piu comprensibili e accessibili, con un particolare interesse per i metodi basati su alberi decisionali, apprezzati per la loro semplicita e facilita di interpretazione.\n\n\n\nSono attualmente membro del Bibliometrix Research Team e dello spin-off accademico K-Synth. Di recente, ho lavorato come Visiting Scholar presso il Dipartimento di Metodologia e Statistica dell’Universita di Leiden (Olanda).\nI miei contributi sono stati riconosciuti in pubblicazioni su diverse riviste scientifiche internazionali. Insieme a un team di colleghi di talento, lavoro attivamente allo sviluppo di innovativi pacchetti software open-source per l’ambiente di programmazione R."
+  },
+  {
+    "objectID": "it/index.html#ultime-notizie",
+    "href": "it/index.html#ultime-notizie",
+    "title": "Agostino Gnasso",
+    "section": "Ultime Notizie",
+    "text": "Ultime Notizie\n\n\n\n\n\n\nSettembre 2025 — Tre paper accettati a CLADAG 2025 e RC33 2025 a Napoli, su interpretabilita XAI e analisi di survey sanitari.\nLuglio 2025 — Nuova release di e2tree v0.2.0 su CRAN, con supporto XGBoost ed estensioni alla regressione.\n2025 — Nuovo articolo pubblicato su Annals of Operations Research: “Predicting depression in Italy using random forest through the E2Tree methodology”. DOI\n2025 — Nuovo articolo pubblicato su Applied Stochastic Models in Business and Industry: “Extending Explainable Ensemble Trees to Regression Contexts”. DOI"
+  },
+  {
+    "objectID": "it/index.html#interessi-di-ricerca",
+    "href": "it/index.html#interessi-di-ricerca",
+    "title": "Agostino Gnasso",
+    "section": "Interessi di Ricerca",
+    "text": "Interessi di Ricerca\n\n\n🔍\nAI Spiegabile (XAI)\nRendere trasparenti i modelli black-box attraverso strutture ad albero interpretabili e spiegazioni visive.\n\n\n🌲\nMachine Learning & Ensemble\nRandom Forest, XGBoost e metodi ensemble con focus sull’interpretabilita.\n\n\n📊\nBibliometria & Science Mapping\nAnalisi quantitativa della letteratura scientifica, reti di citazioni e trend di ricerca.\n\n\n💻\nSoftware Statistico (R & Python)\nSviluppo di pacchetti open-source per analisi dati, XAI e ricerca bibliometrica."
+  },
+  {
+    "objectID": "it/index.html#contatti",
+    "href": "it/index.html#contatti",
+    "title": "Agostino Gnasso",
+    "section": "Contatti",
+    "text": "Contatti\nSe vuoi metterti in contatto o discutere una potenziale collaborazione:\n\nprint(sub(\" AT \", \"@\", \"agostino.gnasso AT unina.it\"))\n\nPuoi trovarmi anche su LinkedIn, GitHub, Google Scholar e ResearchGate."
+  },
+  {
+    "objectID": "it/index.html#dove-trovarmi",
+    "href": "it/index.html#dove-trovarmi",
+    "title": "Agostino Gnasso",
+    "section": "Dove Trovarmi",
+    "text": "Dove Trovarmi\nMi trovo presso il complesso accademico di Monte Sant’Angelo a Napoli.\nDipartimento di Scienze Economiche e Statistiche Universita degli Studi di Napoli Federico II\n📍 Indirizzo: Monte S. Angelo, Via Cinthia, 80126 Napoli, Italia.  Ufficio: Stanza D-22, Settore D, 2° Piano, Edificio 3."
+  },
+  {
+    "objectID": "it/collaborations.html",
+    "href": "it/collaborations.html",
+    "title": "Rete & Affiliazioni",
+    "section": "",
+    "text": "Il mio percorso accademico si fonda su solide collaborazioni con istituzioni di ricerca di primo piano e una forte rete di colleghi esperti del loro dominio."
+  },
+  {
+    "objectID": "it/collaborations.html#istituzioni-gruppi-di-ricerca",
+    "href": "it/collaborations.html#istituzioni-gruppi-di-ricerca",
+    "title": "Rete & Affiliazioni",
+    "section": "Istituzioni & Gruppi di Ricerca",
+    "text": "Istituzioni & Gruppi di Ricerca\n\n\n\nUniversita degli Studi di Napoli Federico II\nDottorato & Sede di Ricerca La piu antica universita pubblica laica del mondo, dove svolgo la mia ricerca principale in Economia e Statistica.\n\n\nDipartimento di Scienze Economiche e Statistiche\nDISES Il mio dipartimento, un centro di eccellenza per la ricerca economica e statistica nel Sud Italia.\n\n\n\n\nNaples School of Economics (NSE)\nProgramma di Dottorato Un programma di dottorato internazionale che promuove la ricerca avanzata in economia e finanza.\n\n\nUniversita di Leiden\nVisiting Scholar Dipartimento di Metodologia e Statistica. Ho trascorso un periodo di visiting focalizzato su psicometria e apprendimento statistico.\n\n\n\n\nBibliometrix\nCore Developer Team Uno strumento R open-source per l’analisi completa di science mapping.\n\n\nK-Synth\nSpin-off Accademico Uno spin-off dell’Universita Federico II focalizzato sulla generazione di dati sintetici e consulenza statistica avanzata."
+  },
+  {
+    "objectID": "it/collaborations.html#colleghi-amici",
+    "href": "it/collaborations.html#colleghi-amici",
+    "title": "Rete & Affiliazioni",
+    "section": "Colleghi & Amici",
+    "text": "Colleghi & Amici\nLa ricerca e un impegno collettivo. Sono orgoglioso di collaborare con:\n\nMassimo Aria | Professore Ordinario di Statistica @Universita degli Studi di Napoli Federico II\nAntonio D’Ambrosio | Professore Ordinario di Statistica @Universita degli Studi di Napoli Federico II\nGermana Scepi | Professoressa Ordinaria di Statistica @Universita degli Studi di Napoli Federico II\nRoberta Siciliano | Professoressa Ordinaria di Statistica @Universita degli Studi di Napoli Federico II\nCorrado Cuccurullo | Professore Ordinario di Management @Universita degli Studi della Campania Luigi Vanvitelli\nMarjolein Fokkema | Professoressa Associata @Universita di Leiden\nCarmela Iorio | Professoressa Associata di Statistica @Universita degli Studi di Napoli Federico II\nGiuseppe Pandolfo | Professore Associato di Statistica @Universita degli Studi di Napoli Federico II\nMichelangelo Misuraca | Professore Associato di Statistica per le Scienze Sociali @Universita di Salerno\nLuca D’Aniello | Ricercatore di Statistica per le Scienze Sociali @Universita degli Studi di Napoli Federico II\nMaria Spano | Ricercatrice di Statistica per le Scienze Sociali @Universita degli Studi di Napoli Federico II\nAlessandra Belfiore | Ricercatrice di Management @UniPegaso\n\n\n\nUnisciti alla Rete\nSei interessato a Statistica, AI Spiegabile, Bibliometria o Software Statistico? Non esitare a contattarmi per collaborazioni."
   },
   {
     "objectID": "software.html",
@@ -137,7 +340,7 @@
     "href": "software.html#e2tree",
     "title": "Software",
     "section": "e2tree ",
-    "text": "e2tree \nExplainable Ensemble Trees\n \nThe e2tree package implements the Explainable Ensemble Trees (E2Tree) methodology proposed by Aria et al. (2024). It provides a novel approach to explain and interpret decision tree ensemble models — such as Random Forests and XGBoost — using a single, interpretable tree-like structure.\nThe core idea is to generate a surrogate tree that captures the relational structure between the response variable and predictors learned by the ensemble, making complex black-box models transparent and easy to understand.\nKey features:\n\nExplain Random Forest (via randomForest or ranger) and XGBoost models\nGenerate interpretable dendrogram-like visualizations\nCompute variable importance measures with associated plots\nConvert E2Tree outputs to rpart objects for further analysis\nSupport for both classification and regression tasks\n\nInstallation:\n# Stable version from CRAN\ninstall.packages(\"e2tree\")\n\n# Development version from GitHub\ndevtools::install_github(\"massimoaria/e2tree\")\nQuick example:\nlibrary(e2tree)\nlibrary(randomForest)\n\n# Train a Random Forest\nrf &lt;- randomForest(Species ~ ., data = iris)\n\n# Build the Explainable Ensemble Tree\nresult &lt;- e2tree(rf, data = iris)\n\n# Plot the interpretable tree\nplot(result)\nReferences:\n\nAria, M., Gnasso, A., Iorio, C., & Pandolfo, G. (2024). “Explainable ensemble trees”. Computational Statistics, 39(1), 3-19. DOI\nAria, M., Gnasso, A., Iorio, C., & Fokkema, M. (2025). “Extending Explainable Ensemble Trees to Regression Contexts”. Applied Stochastic Models in Business and Industry, 42(1), e70064. DOI\n\nCRAN GitHub"
+    "text": "e2tree \n\nExplainable Ensemble Trees\n \nThe e2tree package implements the Explainable Ensemble Trees (E2Tree) methodology, a global surrogate model designed to approximate the prediction mechanism of tree-based ensembles (such as Random Forests and Boosting) through a single, interpretable tree structure.\nUnlike traditional single decision trees (CART) that optimize a loss function directly on the data, E2Tree learns the relational structure established by the black-box model. It achieves this by extracting a co-occurences matrix from the trained ensemble, which quantifies the frequency with which observations share the same terminal nodes. Through hierarchical clustering of this matrix, E2Tree constructs a representative dendrogram that remains faithful to the complex non-linear patterns captured by the original model while ensuring transparency.\nKey features:\n\nGlobal Interpretability: Converts complex Ensemble Models into a single explanatory tree.\nStructure Preservation: Uses hierarchical clustering on connectivity matrices to capture the “proximity” learned by the ensemble.\nDual Mode: Supports Classification (via frequency-based connectivity) and Regression (via weighted connectivity based on leaf predictions).\nVisual Insights: Generates dendrogram-like visualizations and extracts clear decision rules (prototypes) for each cluster.\nIntegration: Outputs are compatible with rpart objects for seamless analysis.\n\nInstallation:\n# Stable version from CRAN\ninstall.packages(\"e2tree\")\n\n# Development version from GitHub\ndevtools::install_github(\"agostinognasso/e2tree\")\nReferences:\n\nAria, M., Gnasso, A., Iorio, C., & Pandolfo, G. (2024). “Explainable ensemble trees”. Computational Statistics, 39(1), 3-19. DOI\nAria, M., Gnasso, A., Iorio, C., & Fokkema, M. (2025). “Extending Explainable Ensemble Trees to Regression Contexts”. Applied Stochastic Models in Business and Industry, 42(1), e70064. DOI\n\nCRAN GitHub"
   },
   {
     "objectID": "software.html#bibliometrix",

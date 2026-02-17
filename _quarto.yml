@@ -22,15 +22,21 @@ website:
         href: collaborations.qmd
       - text: Teaching
         href: teaching.qmd
+      - text: Consulting
+        href: consulting.qmd
       - icon: github
         href: https://github.com/agostinognasso
       - icon: linkedin
         href: https://linkedin.com/in/agostino-gnasso
       - icon: envelope
         href: mailto:agostino.gnasso@unina.it
+      - text: "🇮🇹 IT"
+        href: it/index.html
 
 format:
   html:
     theme: [cosmo, theme.scss]
     toc: true
-    include-after-body: footer.html
+    include-after-body:
+      - footer.html
+      - lang-switch.html

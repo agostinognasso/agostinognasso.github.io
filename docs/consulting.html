@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Software – Agostino Gnasso</title>
+<title>Consulting – Agostino Gnasso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,41 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -137,7 +102,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./software.html" aria-current="page"> 
+    <a class="nav-link" href="./software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -153,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./consulting.html"> 
+    <a class="nav-link active" href="./consulting.html" aria-current="page"> 
 <span class="menu-text">Consulting</span></a>
   </li>  
   <li class="nav-item compact">
@@ -191,11 +156,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#e2tree" id="toc-e2tree" class="nav-link active" data-scroll-target="#e2tree">e2tree <img src="https://img.shields.io/badge/CRAN-v0.2.0-blue" alt="CRAN version" style="vertical-align: middle; margin-left: 8px;"></a>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link active" data-scroll-target="#how-it-works">How It Works</a></li>
+  <li><a href="#who-can-benefit" id="toc-who-can-benefit" class="nav-link" data-scroll-target="#who-can-benefit">Who Can Benefit</a>
   <ul class="collapse">
-  <li><a href="#explainable-ensemble-trees" id="toc-explainable-ensemble-trees" class="nav-link" data-scroll-target="#explainable-ensemble-trees">Explainable Ensemble Trees</a></li>
+  <li><a href="#lets-work-together" id="toc-lets-work-together" class="nav-link" data-scroll-target="#lets-work-together">Let’s Work Together</a></li>
   </ul></li>
-  <li><a href="#bibliometrix" id="toc-bibliometrix" class="nav-link" data-scroll-target="#bibliometrix">bibliometrix <img src="https://img.shields.io/badge/CRAN-v5.2.1-blue" alt="CRAN version" style="vertical-align: middle; margin-left: 8px;"></a></li>
   </ul>
 </nav>
     </div>
@@ -204,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Software</h1>
+<h1 class="title">Consulting</h1>
 </div>
 
 
@@ -221,57 +186,86 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>I actively contribute to the development of open-source software for statistical analysis and machine learning, primarily in the <strong>R</strong> programming environment. Below are the main packages I work on.</p>
-<hr>
-<section id="e2tree" class="level2">
-<h2 class="anchored" data-anchor-id="e2tree">e2tree <img src="https://img.shields.io/badge/CRAN-v0.2.0-blue" alt="CRAN version" style="vertical-align: middle; margin-left: 8px;"></h2>
-<section id="explainable-ensemble-trees" class="level3">
-<h3 class="anchored" data-anchor-id="explainable-ensemble-trees">Explainable Ensemble Trees</h3>
-<p><a href="https://cran.r-project.org/package=e2tree" target="_blank"><img src="https://cranlogs.r-pkg.org/badges/grand-total/e2tree" alt="Download CRAN"></a> <a href="https://github.com/massimoaria/e2tree" target="_blank"><img src="https://img.shields.io/github/stars/massimoaria/e2tree?style=social" alt="Stelle GitHub"></a></p>
-<p>The <code>e2tree</code> package implements the <strong>Explainable Ensemble Trees (E2Tree)</strong> methodology, a global surrogate model designed to approximate the prediction mechanism of tree-based ensembles (such as Random Forests and Boosting) through a single, interpretable tree structure.</p>
-<p>Unlike traditional single decision trees (CART) that optimize a loss function directly on the data, E2Tree learns the <strong>relational structure</strong> established by the black-box model. It achieves this by extracting a <strong>co-occurences matrix</strong> from the trained ensemble, which quantifies the frequency with which observations share the same terminal nodes. Through hierarchical clustering of this matrix, E2Tree constructs a representative dendrogram that remains faithful to the complex non-linear patterns captured by the original model while ensuring transparency.</p>
-<p><strong>Key features:</strong></p>
-<ul>
-<li><strong>Global Interpretability:</strong> Converts complex <strong>Ensemble Models</strong> into a single explanatory tree.</li>
-<li><strong>Structure Preservation:</strong> Uses hierarchical clustering on connectivity matrices to capture the “proximity” learned by the ensemble.</li>
-<li><strong>Dual Mode:</strong> Supports <strong>Classification</strong> (via frequency-based connectivity) and <strong>Regression</strong> (via weighted connectivity based on leaf predictions).</li>
-<li><strong>Visual Insights:</strong> Generates dendrogram-like visualizations and extracts clear decision rules (prototypes) for each cluster.</li>
-<li><strong>Integration:</strong> Outputs are compatible with <code>rpart</code> objects for seamless analysis.</li>
-</ul>
-<p><strong>Installation:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stable version from CRAN</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"e2tree"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Development version from GitHub</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"agostinognasso/e2tree"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>References:</strong></p>
-<ul>
-<li>Aria, M., <strong>Gnasso, A.</strong>, Iorio, C., &amp; Pandolfo, G. (2024). “Explainable ensemble trees”. <em>Computational Statistics</em>, 39(1), 3-19. <a href="https://doi.org/10.1007/s00180-022-01312-6">DOI</a></li>
-<li>Aria, M., <strong>Gnasso, A.</strong>, Iorio, C., &amp; Fokkema, M. (2025). “Extending Explainable Ensemble Trees to Regression Contexts”. <em>Applied Stochastic Models in Business and Industry</em>, 42(1), e70064. <a href="https://doi.org/10.1002/asmb.70064">DOI</a></li>
-</ul>
-<p><a href="https://cran.r-project.org/package=e2tree" class="btn btn-primary btn-sm" target="_blank">CRAN</a> <a href="https://github.com/agostinognasso/e2tree" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a></p>
-<hr>
+<div class="service-cards">
+<div class="service-card">
+<p><span class="service-icon">📊</span></p>
+<p><span class="service-title">Statistical Modeling</span></p>
+<p><span class="service-desc">Regression analysis, hypothesis testing, survey design, and advanced multivariate methods tailored to your research or business questions.</span></p>
+</div>
+<div class="service-card">
+<p><span class="service-icon">🤖</span></p>
+<p><span class="service-title">Machine Learning &amp; Predictive Analytics</span></p>
+<p><span class="service-desc">Development of classification and regression models using Random Forests, XGBoost, neural networks, and ensemble methods with a focus on interpretability.</span></p>
+</div>
+<div class="service-card">
+<p><span class="service-icon">🔍</span></p>
+<p><span class="service-title">Explainable AI (XAI)</span></p>
+<p><span class="service-desc">Making black-box models transparent and understandable through interpretable tree structures, SHAP values, LIME, and custom XAI solutions.</span></p>
+</div>
+<div class="service-card">
+<p><span class="service-icon">📚</span></p>
+<p><span class="service-title">Bibliometric &amp; Science Mapping</span></p>
+<p><span class="service-desc">Systematic literature reviews, citation analysis, research trend mapping, and science mapping using Bibliometrix and Biblioshiny.</span></p>
+</div>
+<div class="service-card">
+<p><span class="service-icon">💻</span></p>
+<p><span class="service-title">R &amp; Python Development</span></p>
+<p><span class="service-desc">Custom scripts, data pipelines, dashboards (Shiny, Streamlit), and R/Python package development for reproducible data analysis workflows.</span></p>
+</div>
+<div class="service-card">
+<p><span class="service-icon">📈</span></p>
+<p><span class="service-title">Data Visualization &amp; Reporting</span></p>
+<p><span class="service-desc">Publication-quality charts, interactive visualizations, and comprehensive analytical reports to communicate your findings effectively.</span></p>
+</div>
+</div>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How It Works</h2>
+<div class="process-steps">
+<div class="process-step">
+<p><span class="step-number">1</span></p>
+<div class="step-content">
+<p><span class="step-title">Initial Consultation</span></p>
+<p><span class="step-desc">We discuss your project goals, data availability, and expected outcomes. This first meeting is free and without commitment.</span></p>
+</div>
+</div>
+<div class="process-step">
+<p><span class="step-number">2</span></p>
+<div class="step-content">
+<p><span class="step-title">Proposal &amp; Planning</span></p>
+<p><span class="step-desc">I prepare a tailored proposal outlining the methodology, timeline, and deliverables for your project.</span></p>
+</div>
+</div>
+<div class="process-step">
+<p><span class="step-number">3</span></p>
+<div class="step-content">
+<p><span class="step-title">Analysis &amp; Development</span></p>
+<p><span class="step-desc">I carry out the analytical work, keeping you updated with regular progress reports and intermediate results.</span></p>
+</div>
+</div>
+<div class="process-step">
+<p><span class="step-number">4</span></p>
+<div class="step-content">
+<p><span class="step-title">Delivery &amp; Support</span></p>
+<p><span class="step-desc">You receive the final deliverables (reports, code, models) along with documentation and follow-up support.</span></p>
+</div>
+</div>
+</div>
 </section>
+<section id="who-can-benefit" class="level2">
+<h2 class="anchored" data-anchor-id="who-can-benefit">Who Can Benefit</h2>
+<p>This service is designed for:</p>
+<ul>
+<li><strong>Businesses &amp; Startups</strong> looking to leverage data for strategic decisions</li>
+<li><strong>Research Groups &amp; Universities</strong> needing advanced statistical support for publications</li>
+<li><strong>Healthcare Professionals</strong> interested in clinical data analysis and predictive modeling</li>
+<li><strong>PhD Students &amp; Researchers</strong> seeking methodological guidance for their projects</li>
+<li><strong>Public Institutions</strong> requiring evidence-based analysis for policy evaluation</li>
+</ul>
+<section id="lets-work-together" class="level3 consulting-cta">
+<h3 class="anchored" data-anchor-id="lets-work-together">Let’s Work Together</h3>
+<p>Have a project in mind? I’d be happy to discuss how I can help.</p>
+<p><a href="mailto:agostino.gnasso@unina.it" class="cta-btn">Get in Touch</a></p>
 </section>
-<section id="bibliometrix" class="level2">
-<h2 class="anchored" data-anchor-id="bibliometrix">bibliometrix <img src="https://img.shields.io/badge/CRAN-v5.2.1-blue" alt="CRAN version" style="vertical-align: middle; margin-left: 8px;"></h2>
-<p><strong>Comprehensive Science Mapping Analysis</strong></p>
-<p><a href="https://cran.r-project.org/package=bibliometrix" target="_blank"><img src="https://cranlogs.r-pkg.org/badges/grand-total/bibliometrix" alt="CRAN Downloads"></a> <a href="https://github.com/massimoaria/bibliometrix" target="_blank"><img src="https://img.shields.io/github/stars/massimoaria/bibliometrix?style=social" alt="GitHub Stars"></a></p>
-<p><code>bibliometrix</code> is an R package for quantitative research in scientometrics and bibliometrics. It provides a comprehensive workflow for science mapping analysis, supporting data import from major bibliographic databases including Scopus, Web of Science, Dimensions, OpenAlex, PubMed, Cochrane Library, and Lens.</p>
-<p>As a <strong>core developer team member</strong>, I contribute to the development, maintenance, and evolution of the package and its web interface <strong>Biblioshiny</strong>.</p>
-<p><strong>Key features:</strong></p>
-<ul>
-<li>Import and convert data from <strong>7+ bibliographic databases</strong></li>
-<li>Perform <strong>descriptive bibliometric analysis</strong> (author productivity, citation analysis, h-index)</li>
-<li>Build <strong>network matrices</strong> for co-citation, coupling, collaboration, and co-word analysis</li>
-<li>Generate <strong>thematic maps</strong>, <strong>thematic evolution</strong> plots, and <strong>conceptual structure</strong> visualizations</li>
-<li>Interactive web interface via <strong>Biblioshiny</strong> for non-coders</li>
-</ul>
-<p><strong>Reference:</strong></p>
-<ul>
-<li>Aria, M. &amp; Cuccurullo, C. (2017). “bibliometrix: An R-tool for comprehensive science mapping analysis”. <em>Journal of Informetrics</em>, 11(4), 959-975.</li>
-</ul>
-<p><a href="https://cran.r-project.org/package=bibliometrix" class="btn btn-primary btn-sm" target="_blank">CRAN</a> <a href="https://github.com/massimoaria/bibliometrix" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a> <a href="https://www.bibliometrix.org" class="btn btn-outline-secondary btn-sm" target="_blank">Website</a></p>
 
 
 </section>

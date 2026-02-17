@@ -1,0 +1,89 @@
+---
+title: "Software"
+---
+
+Contribuisco attivamente allo sviluppo di software open-source per l'analisi statistica e il machine learning, principalmente nell'ambiente di programmazione **R**. Di seguito i principali pacchetti su cui lavoro.
+
+---
+
+## e2tree <img src="https://img.shields.io/badge/CRAN-v0.2.0-blue" alt="Versione CRAN" style="vertical-align: middle; margin-left: 8px;"/>
+
+**Explainable Ensemble Trees**
+
+<a href="https://cran.r-project.org/package=e2tree" target="_blank"><img src="https://cranlogs.r-pkg.org/badges/grand-total/e2tree" alt="Download CRAN"/></a>
+<a href="https://github.com/massimoaria/e2tree" target="_blank"><img src="https://img.shields.io/github/stars/massimoaria/e2tree?style=social" alt="Stelle GitHub"/></a>
+
+Il pacchetto `e2tree` implementa la metodologia **Explainable Ensemble Trees (E2Tree)**, un modello surrogato globale progettato per approssimare il meccanismo di predizione degli ensemble basati su alberi (come Random Forests e Boosting) attraverso una singola struttura ad albero interpretabile.
+
+A differenza dei tradizionali alberi decisionali singoli (CART) che ottimizzano una funzione di perdita direttamente sui dati, E2Tree apprende la **struttura relazionale** stabilita dal modello black-box. Ottiene questo risultato estraendo una **matrice di co-occorrenze** dall'ensemble addestrato, quantificando la frequenza con cui le osservazioni condividono gli stessi nodi terminali. Attraverso il clustering gerarchico di questa matrice, E2Tree costruisce un dendrogramma rappresentativo che rimane fedele ai complessi pattern non lineari catturati dal modello originale, garantendo al contempo trasparenza.
+
+**Caratteristiche principali:**
+
+* **Interpretabilità Globale:** Converte complessi **Modelli Ensemble** in un singolo albero esplicativo.
+* **Preservazione della Struttura:** Utilizza il clustering gerarchico sulle matrici di connettività per catturare la "prossimità" appresa dall'ensemble.
+* **Doppia Modalità:** Supporta **Classificazione** (tramite connettività basata sulla frequenza) e **Regressione** (tramite connettività pesata sulle predizioni delle foglie).
+* **Insight Visivi:** Genera visualizzazioni simili a dendrogrammi ed estrae chiare regole decisionali (prototipi) per ogni cluster.
+* **Integrazione:** Gli output sono compatibili con oggetti `rpart` per un'analisi immediata e integrata.
+
+**Installazione:**
+
+```r
+# Versione stabile da CRAN
+install.packages("e2tree")
+
+# Versione di sviluppo da GitHub
+devtools::install_github("massimoaria/e2tree")
+```
+
+**Esempio rapido:**
+
+```r
+library(e2tree)
+library(randomForest)
+
+# Addestramento di una Random Forest
+rf <- randomForest(Species ~ ., data = iris)
+
+# Costruzione dell'Explainable Ensemble Tree
+result <- e2tree(rf, data = iris)
+
+# Visualizzazione dell'albero interpretabile
+plot(result)
+```
+
+**Riferimenti:**
+
+- Aria, M., **Gnasso, A.**, Iorio, C., & Pandolfo, G. (2024). "Explainable ensemble trees". *Computational Statistics*, 39(1), 3-19. [DOI](https://doi.org/10.1007/s00180-022-01312-6)
+- Aria, M., **Gnasso, A.**, Iorio, C., & Fokkema, M. (2025). "Extending Explainable Ensemble Trees to Regression Contexts". *Applied Stochastic Models in Business and Industry*, 42(1), e70064. [DOI](https://doi.org/10.1002/asmb.70064)
+
+<a href="https://cran.r-project.org/package=e2tree" class="btn btn-primary btn-sm" target="_blank">CRAN</a>
+<a href="https://github.com/massimoaria/e2tree" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
+
+---
+
+## bibliometrix <img src="https://img.shields.io/badge/CRAN-v5.2.1-blue" alt="Versione CRAN" style="vertical-align: middle; margin-left: 8px;"/>
+
+**Comprehensive Science Mapping Analysis**
+
+<a href="https://cran.r-project.org/package=bibliometrix" target="_blank"><img src="https://cranlogs.r-pkg.org/badges/grand-total/bibliometrix" alt="Download CRAN"/></a>
+<a href="https://github.com/massimoaria/bibliometrix" target="_blank"><img src="https://img.shields.io/github/stars/massimoaria/bibliometrix?style=social" alt="Stelle GitHub"/></a>
+
+`bibliometrix` e un pacchetto R per la ricerca quantitativa in scientometria e bibliometria. Fornisce un workflow completo per l'analisi di science mapping, supportando l'importazione di dati dai principali database bibliografici tra cui Scopus, Web of Science, Dimensions, OpenAlex, PubMed, Cochrane Library e Lens.
+
+Come **membro del core developer team**, contribuisco allo sviluppo, alla manutenzione e all'evoluzione del pacchetto e della sua interfaccia web **Biblioshiny**.
+
+**Caratteristiche principali:**
+
+- Importazione e conversione dati da **7+ database bibliografici**
+- Analisi **bibliometrica descrittiva** (produttivita degli autori, analisi citazionale, h-index)
+- Costruzione di **matrici di rete** per co-citazione, coupling, collaborazione e analisi co-word
+- Generazione di **mappe tematiche**, grafici di **evoluzione tematica** e visualizzazioni della **struttura concettuale**
+- Interfaccia web interattiva tramite **Biblioshiny** per utenti non programmatori
+
+**Riferimento:**
+
+- Aria, M. & Cuccurullo, C. (2017). "bibliometrix: An R-tool for comprehensive science mapping analysis". *Journal of Informetrics*, 11(4), 959-975.
+
+<a href="https://cran.r-project.org/package=bibliometrix" class="btn btn-primary btn-sm" target="_blank">CRAN</a>
+<a href="https://github.com/massimoaria/bibliometrix" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
+<a href="https://www.bibliometrix.org" class="btn btn-outline-secondary btn-sm" target="_blank">Sito Web</a>

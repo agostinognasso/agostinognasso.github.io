@@ -1,0 +1,60 @@
+---
+title: "Rete & Affiliazioni"
+---
+
+Il mio percorso accademico si fonda su solide collaborazioni con istituzioni di ricerca di primo piano e una forte rete di colleghi esperti del loro dominio.
+
+## Istituzioni & Gruppi di Ricerca
+
+::: {layout-ncol=2}
+
+### [Universita degli Studi di Napoli Federico II](http://www.unina.it)
+**Dottorato & Sede di Ricerca**
+<br>La piu antica universita pubblica laica del mondo, dove svolgo la mia ricerca principale in Economia e Statistica.
+
+### [Dipartimento di Scienze Economiche e Statistiche](http://www.dises.unina.it)
+**DISES**
+<br>Il mio dipartimento, un centro di eccellenza per la ricerca economica e statistica nel Sud Italia.
+
+### [Naples School of Economics (NSE)](http://www.nse.unina.it)
+**Programma di Dottorato**
+<br>Un programma di dottorato internazionale che promuove la ricerca avanzata in economia e finanza.
+
+### [Universita di Leiden](https://www.universiteitleiden.nl/en)
+**Visiting Scholar**
+<br>Dipartimento di Metodologia e Statistica. Ho trascorso un periodo di visiting focalizzato su psicometria e apprendimento statistico.
+
+### [Bibliometrix](https://www.bibliometrix.org)
+**Core Developer Team**
+<br>Uno strumento R open-source per l'analisi completa di science mapping.
+
+### [K-Synth](https://www.k-synth.unina.it)
+**Spin-off Accademico**
+<br>Uno spin-off dell'Universita Federico II focalizzato sulla generazione di dati sintetici e consulenza statistica avanzata.
+
+:::
+
+## Colleghi & Amici
+
+La ricerca e un impegno collettivo. Sono orgoglioso di collaborare con:
+
+* **[Massimo Aria](https://massimoaria.com/index.html#header4-3)** | *Professore Ordinario di Statistica @Universita degli Studi di Napoli Federico II*
+* **[Antonio D'Ambrosio](http://wpage.unina.it/antdambr/)** | *Professore Ordinario di Statistica @Universita degli Studi di Napoli Federico II*
+* **[Germana Scepi](https://www.docenti.unina.it/teacher/4745524d414e415343455049534350474d4e36364235384638333952/profile/references)** | *Professoressa Ordinaria di Statistica @Universita degli Studi di Napoli Federico II*
+* **[Roberta Siciliano](https://www.docenti.unina.it/teacher/524f4245525441534943494c49414e4f53434c52525436344535324638333953/profile/references)** | *Professoressa Ordinaria di Statistica @Universita degli Studi di Napoli Federico II*
+* **[Corrado Cuccurullo](https://www.economia.unicampania.it/dipartimento/docenti?MATRICOLA=059204)** | *Professore Ordinario di Management @Universita degli Studi della Campania Luigi Vanvitelli*
+* **[Marjolein Fokkema](https://onderzoek.marjoleinfokkema.nl/about)** | *Professoressa Associata @Universita di Leiden*
+* **[Carmela Iorio](https://www.docenti.unina.it/carmela.iorio)** | *Professoressa Associata di Statistica @Universita degli Studi di Napoli Federico II*
+* **[Giuseppe Pandolfo](https://www.docenti.unina.it/teacher/474955534550504550414e444f4c464f504e4447505038335231364437303843/profile/references)** | *Professore Associato di Statistica @Universita degli Studi di Napoli Federico II*
+* **[Michelangelo Misuraca](https://docenti.unisa.it/028308/home)** | *Professore Associato di Statistica per le Scienze Sociali @Universita di Salerno*
+* **[Luca D'Aniello](https://sites.google.com/view/lucadaniello)** | *Ricercatore di Statistica per le Scienze Sociali @Universita degli Studi di Napoli Federico II*
+* **[Maria Spano](https://www.docenti.unina.it/teacher/4d415249415350414e4f53504e4d524138344435344134383954/profile/references)** | *Ricercatrice di Statistica per le Scienze Sociali @Universita degli Studi di Napoli Federico II*
+* **[Alessandra Belfiore](https://www.unipegaso.it/docenti/alessandra-belfiore)** | *Ricercatrice di Management @UniPegaso*
+
+
+
+
+---
+
+### Unisciti alla Rete
+Sei interessato a **Statistica**, **AI Spiegabile**, **Bibliometria** o **Software Statistico**? Non esitare a [contattarmi](mailto:agostino.gnasso@unina.it) per collaborazioni.
