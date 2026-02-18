@@ -40,3 +40,4 @@ format:
     include-after-body:
       - footer.html
       - lang-switch.html
+      - analytics.html
