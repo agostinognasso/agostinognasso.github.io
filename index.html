@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agostino Gnasso — Researcher · PhD in Economics</title>
     <meta name="description" content="Agostino Gnasso — Researcher in Explainable AI, Machine Learning, and Statistics. University of Naples Federico II.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agostinognasso.github.io/">
+    <meta property="og:title" content="Agostino Gnasso — Researcher · PhD in Economics">
+    <meta property="og:description" content="Researcher in Explainable AI, Machine Learning, and Statistics. University of Naples Federico II.">
+    <meta property="og:image" content="https://agostinognasso.github.io/og-image.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agostino Gnasso — Researcher · PhD in Economics">
+    <meta name="twitter:description" content="Researcher in Explainable AI, Machine Learning, and Statistics. University of Naples Federico II.">
+    <meta name="twitter:image" content="https://agostinognasso.github.io/og-image.svg">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Agostino Gnasso",
+      "url": "https://agostinognasso.github.io",
+      "email": "agostino.gnasso@unina.it",
+      "jobTitle": "Researcher in Statistics",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Naples Federico II"
+      },
+      "sameAs": [
+        "https://orcid.org/0000-0002-8046-3923",
+        "https://scholar.google.com/citations?user=cJf-OFIAAAAJ",
+        "https://github.com/agostinognasso",
+        "https://www.linkedin.com/in/agostino-gnasso"
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -253,6 +293,15 @@
         .b-r { background: rgba(68,114,202,.1); color: var(--accent); border: 1px solid rgba(68,114,202,.2); }
         .doi { font-size: .68rem; color: var(--text-muted); text-decoration: none; letter-spacing: .04em; transition: color .2s; }
         .doi:hover { color: var(--gold); }
+        .pub-actions { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; margin-top: .5rem; }
+        .bib-btn { font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); background: none; border: 1px solid rgba(138,111,40,.3); border-radius: 3px; padding: .2rem .55rem; cursor: pointer; font-family: 'Jost', sans-serif; transition: all .2s; }
+        .bib-btn:hover, .bib-btn.open { color: var(--gold); border-color: var(--gold-dim); }
+        .bib-block { display: none; margin-top: .75rem; background: var(--navy-deep); border: 1px solid rgba(138,111,40,.2); border-radius: 6px; overflow: hidden; }
+        .bib-block.open { display: block; }
+        .bib-block pre { font-size: .7rem; color: var(--text-sec); padding: 1rem; overflow-x: auto; line-height: 1.6; font-family: 'Courier New', monospace; white-space: pre; }
+        .bib-copy { display: block; font-size: .6rem; letter-spacing: .07em; text-transform: uppercase; color: var(--text-muted); background: none; border: none; border-top: 1px solid rgba(138,111,40,.15); width: 100%; padding: .4rem; cursor: pointer; font-family: 'Jost', sans-serif; transition: color .2s; }
+        .bib-copy:hover { color: var(--gold); }
+        .bib-copy.copied { color: var(--green); }
 
         /* ─── TALKS ─── */
         #talks { background: var(--navy-dark); }
@@ -578,6 +627,7 @@
         <a href="https://linkedin.com/in/agostino-gnasso" target="_blank">LinkedIn</a>
         <a href="https://github.com/agostinognasso" target="_blank">GitHub</a>
         <a href="https://scholar.google.com/citations?user=cJf-OFIAAAAJ" target="_blank">Scholar</a>
+        <a href="https://orcid.org/0000-0002-8046-3923" target="_blank">ORCID</a>
     </div>
 </aside>
 
@@ -697,7 +747,24 @@
                     <div class="pub-a">Aria, M., <strong>Gnasso, A.</strong>, Iorio, C., &amp; Fokkema, M.</div>
                     <div class="pub-j">Applied Stochastic Models in Business and Industry, 42(1), e70064</div>
                     <div class="badges"><span class="b b-a">Fascia A · Area 13 / STAT-01/A</span></div>
-                    <a class="doi" href="https://doi.org/10.1002/asmb.70064" target="_blank">↗ doi:10.1002/asmb.70064</a>
+                    <div class="pub-actions">
+                        <a class="doi" href="https://doi.org/10.1002/asmb.70064" target="_blank">↗ doi:10.1002/asmb.70064</a>
+                        <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+                    </div>
+                    <div class="bib-block">
+                        <pre>@article{aria2025extending,
+  title     = {Extending Explainable Ensemble Trees to Regression Contexts},
+  author    = {Aria, Massimo and Gnasso, Agostino and Iorio, Carmela and Fokkema, Marjolein},
+  journal   = {Applied Stochastic Models in Business and Industry},
+  volume    = {42},
+  number    = {1},
+  pages     = {e70064},
+  year      = {2025},
+  publisher = {Wiley},
+  doi       = {10.1002/asmb.70064}
+}</pre>
+                        <button class="bib-copy" onclick="copyBib(this)">Copy to clipboard</button>
+                    </div>
                 </div>
             </div>
             <div class="pub-entry reveal">
@@ -707,7 +774,21 @@
                     <div class="pub-a">Aria, M., <strong>Gnasso, A.</strong>, Rivieccio, R., &amp; Siciliano, R.</div>
                     <div class="pub-j">Annals of Operations Research</div>
                     <div class="badges"><span class="b b-a">Fascia A · Area 13 / STAT-01/A</span></div>
-                    <a class="doi" href="https://doi.org/10.1007/s10479-025-06758-7" target="_blank">↗ doi:10.1007/s10479-025-06758-7</a>
+                    <div class="pub-actions">
+                        <a class="doi" href="https://doi.org/10.1007/s10479-025-06758-7" target="_blank">↗ doi:10.1007/s10479-025-06758-7</a>
+                        <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+                    </div>
+                    <div class="bib-block">
+                        <pre>@article{aria2025predicting,
+  title     = {Predicting depression in Italy using random forest through the {E2Tree} methodology},
+  author    = {Aria, Massimo and Gnasso, Agostino and Rivieccio, Roberta and Siciliano, Roberta},
+  journal   = {Annals of Operations Research},
+  year      = {2025},
+  publisher = {Springer},
+  doi       = {10.1007/s10479-025-06758-7}
+}</pre>
+                        <button class="bib-copy" onclick="copyBib(this)">Copy to clipboard</button>
+                    </div>
                 </div>
             </div>
             <div class="pub-entry reveal">
@@ -717,7 +798,24 @@
                     <div class="pub-a">Aria, M., <strong>Gnasso, A.</strong>, Iorio, C., &amp; Pandolfo, G.</div>
                     <div class="pub-j">Computational Statistics, 39(1), 3–19</div>
                     <div class="badges"><span class="b b-a">Fascia A · Area 13 / STAT-01/A</span></div>
-                    <a class="doi" href="https://doi.org/10.1007/s00180-022-01312-6" target="_blank">↗ doi:10.1007/s00180-022-01312-6</a>
+                    <div class="pub-actions">
+                        <a class="doi" href="https://doi.org/10.1007/s00180-022-01312-6" target="_blank">↗ doi:10.1007/s00180-022-01312-6</a>
+                        <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+                    </div>
+                    <div class="bib-block">
+                        <pre>@article{aria2024explainable,
+  title     = {Explainable ensemble trees},
+  author    = {Aria, Massimo and Gnasso, Agostino and Iorio, Carmela and Pandolfo, Giuseppe},
+  journal   = {Computational Statistics},
+  volume    = {39},
+  number    = {1},
+  pages     = {3--19},
+  year      = {2024},
+  publisher = {Springer},
+  doi       = {10.1007/s00180-022-01312-6}
+}</pre>
+                        <button class="bib-copy" onclick="copyBib(this)">Copy to clipboard</button>
+                    </div>
                 </div>
             </div>
             <div class="pub-entry reveal">
@@ -726,7 +824,23 @@
                     <div class="pub-t">A comparison among interpretative proposals for Random Forests</div>
                     <div class="pub-a">Aria M., Cuccurullo C., <strong>Gnasso A.</strong></div>
                     <div class="pub-j">Machine Learning with Applications</div>
-                    <a class="doi" href="https://doi.org/10.1016/j.mlwa.2021.100094" target="_blank">↗ doi:10.1016/j.mlwa.2021.100094</a>
+                    <div class="pub-actions">
+                        <a class="doi" href="https://doi.org/10.1016/j.mlwa.2021.100094" target="_blank">↗ doi:10.1016/j.mlwa.2021.100094</a>
+                        <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+                    </div>
+                    <div class="bib-block">
+                        <pre>@article{aria2021comparison,
+  title     = {A comparison among interpretative proposals for {Random Forests}},
+  author    = {Aria, Massimo and Cuccurullo, Corrado and Gnasso, Agostino},
+  journal   = {Machine Learning with Applications},
+  volume    = {6},
+  pages     = {100094},
+  year      = {2021},
+  publisher = {Elsevier},
+  doi       = {10.1016/j.mlwa.2021.100094}
+}</pre>
+                        <button class="bib-copy" onclick="copyBib(this)">Copy to clipboard</button>
+                    </div>
                 </div>
             </div>
             <div class="pub-entry reveal">
@@ -735,7 +849,20 @@
                     <div class="pub-t">Assessment of Sleep Disturbance in Oral Lichen Planus and Validation of PSQI: a case-control multicenter study from the SIPMO</div>
                     <div class="pub-a">Adamo D., <strong>Gnasso A.</strong>, et al.</div>
                     <div class="pub-j">Journal of Oral Pathology &amp; Medicine</div>
-                    <a class="doi" href="https://doi.org/10.1111/jop.13255" target="_blank">↗ doi:10.1111/jop.13255</a>
+                    <div class="pub-actions">
+                        <a class="doi" href="https://doi.org/10.1111/jop.13255" target="_blank">↗ doi:10.1111/jop.13255</a>
+                        <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+                    </div>
+                    <div class="bib-block">
+                        <pre>@article{adamo2021assessment,
+  title   = {Assessment of Sleep Disturbance in Oral Lichen Planus and Validation of {PSQI}: a case-control multicenter study from the {SIPMO}},
+  author  = {Adamo, Daniela and Gnasso, Agostino and others},
+  journal = {Journal of Oral Pathology \& Medicine},
+  year    = {2021},
+  doi     = {10.1111/jop.13255}
+}</pre>
+                        <button class="bib-copy" onclick="copyBib(this)">Copy to clipboard</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -778,7 +905,21 @@
                     <div class="pub-t">"Can You Explain That?" E2Tree, SHAP, and LIME for Interpretable Random Forests</div>
                     <div class="pub-a"><strong>Gnasso, A.</strong>, Aria, M.</div>
                     <div class="pub-j">CLADAG-VOC 2025 · Studies in Classification, Data Analysis, and Knowledge Organization. Springer, Cham.</div>
-                    <a class="doi" href="https://doi.org/10.1007/978-3-032-03042-9_20" target="_blank">↗ doi:10.1007/978-3-032-03042-9_20</a>
+                    <div class="pub-actions">
+                        <a class="doi" href="https://doi.org/10.1007/978-3-032-03042-9_20" target="_blank">↗ doi:10.1007/978-3-032-03042-9_20</a>
+                        <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+                    </div>
+                    <div class="bib-block">
+                        <pre>@inproceedings{gnasso2025canyou,
+  title     = {``{Can You Explain That?}'' {E2Tree}, {SHAP}, and {LIME} for Interpretable {Random Forests}},
+  author    = {Gnasso, Agostino and Aria, Massimo},
+  booktitle = {CLADAG-VOC 2025 -- Studies in Classification, Data Analysis, and Knowledge Organization},
+  publisher = {Springer, Cham},
+  year      = {2025},
+  doi       = {10.1007/978-3-032-03042-9_20}
+}</pre>
+                        <button class="bib-copy" onclick="copyBib(this)">Copy to clipboard</button>
+                    </div>
                 </div>
             </div>
             <div class="pub-entry reveal">
@@ -787,7 +928,21 @@
                     <div class="pub-t">From Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics</div>
                     <div class="pub-a"><strong>Gnasso, A.</strong>, Aria, M., Siciliano, R.</div>
                     <div class="pub-j">CLADAG-VOC 2025 · Studies in Classification, Data Analysis, and Knowledge Organization. Springer, Cham.</div>
-                    <a class="doi" href="https://doi.org/10.1007/978-3-032-03042-9_21" target="_blank">↗ doi:10.1007/978-3-032-03042-9_21</a>
+                    <div class="pub-actions">
+                        <a class="doi" href="https://doi.org/10.1007/978-3-032-03042-9_21" target="_blank">↗ doi:10.1007/978-3-032-03042-9_21</a>
+                        <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+                    </div>
+                    <div class="bib-block">
+                        <pre>@inproceedings{gnasso2025fromprediction,
+  title     = {From Prediction to Explanation: Interpreting Risk Factors in Health Survey Analytics},
+  author    = {Gnasso, Agostino and Aria, Massimo and Siciliano, Roberta},
+  booktitle = {CLADAG-VOC 2025 -- Studies in Classification, Data Analysis, and Knowledge Organization},
+  publisher = {Springer, Cham},
+  year      = {2025},
+  doi       = {10.1007/978-3-032-03042-9_21}
+}</pre>
+                        <button class="bib-copy" onclick="copyBib(this)">Copy to clipboard</button>
+                    </div>
                 </div>
             </div>
             <div class="pub-entry reveal">
@@ -812,7 +967,21 @@
                     <div class="pub-t">Explainable Decision Tree Ensembles</div>
                     <div class="pub-a"><strong>Gnasso, A.</strong>, Aria, M., Iorio, C., &amp; Fokkema, M.</div>
                     <div class="pub-j">SIS 2024 · Italian Statistical Society Series on Advances in Statistics. Springer, Cham.</div>
-                    <a class="doi" href="https://doi.org/10.1007/978-3-031-64447-4_21" target="_blank">↗ doi:10.1007/978-3-031-64447-4_21</a>
+                    <div class="pub-actions">
+                        <a class="doi" href="https://doi.org/10.1007/978-3-031-64447-4_21" target="_blank">↗ doi:10.1007/978-3-031-64447-4_21</a>
+                        <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+                    </div>
+                    <div class="bib-block">
+                        <pre>@inproceedings{gnasso2025explainable,
+  title     = {Explainable Decision Tree Ensembles},
+  author    = {Gnasso, Agostino and Aria, Massimo and Iorio, Carmela and Fokkema, Marjolein},
+  booktitle = {SIS 2024 -- Italian Statistical Society Series on Advances in Statistics},
+  publisher = {Springer, Cham},
+  year      = {2025},
+  doi       = {10.1007/978-3-031-64447-4_21}
+}</pre>
+                        <button class="bib-copy" onclick="copyBib(this)">Copy to clipboard</button>
+                    </div>
                 </div>
             </div>
             <div class="pub-entry reveal">
@@ -1442,6 +1611,25 @@ function closeMenu() { mmenu.classList.remove('open'); }
     }
     setTimeout(type, 400);
 })();
+
+function toggleBib(btn) {
+    const block = btn.closest('.pub-actions').nextElementSibling;
+    const isOpen = block.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    btn.textContent = isOpen ? 'Close' : 'BibTeX';
+}
+
+function copyBib(btn) {
+    const text = btn.previousElementSibling.textContent;
+    navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+            btn.textContent = 'Copy to clipboard';
+            btn.classList.remove('copied');
+        }, 2000);
+    });
+}
 </script>
 </body>
 </html>
