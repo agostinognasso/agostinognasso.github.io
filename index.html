@@ -142,8 +142,17 @@
             opacity: 0; animation: fadeUp .8s ease .4s forwards;
         }
         .hero-name em { font-style: italic; color: var(--gold); }
-        .tw-cursor { color: var(--gold); animation: tw-blink .7s step-end infinite; }
-        @keyframes tw-blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+        .tw-cursor { display: none; }
+        .hero-name .letter {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(-18px);
+            filter: blur(8px);
+            animation: letter-in .6s cubic-bezier(.22,1,.36,1) forwards;
+        }
+        @keyframes letter-in {
+            to { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
         .hero-tag {
             font-family: 'Cormorant Garamond', serif;
             font-size: clamp(1.1rem, 2.2vw, 1.7rem);
@@ -1417,30 +1426,24 @@ const mmenu = document.getElementById('mmenu');
 hbtn.addEventListener('click', () => mmenu.classList.toggle('open'));
 function closeMenu() { mmenu.classList.remove('open'); }
 
-/* ── Typewriter hero name ── */
+/* ── Letter dissolve hero name ── */
 (function() {
     const el = document.getElementById('typewriter-name');
-    const cursor = document.querySelector('.tw-cursor');
-    const parts = [{ text: 'Agostino', italic: true }, { text: ' Gnasso', italic: false }];
-    const full = parts.map(p => p.text).join('');
-    let i = 0;
-    function type() {
-        if (i <= full.length) {
-            let html = '';
-            let pos = 0;
-            for (const p of parts) {
-                const slice = full.slice(pos, Math.min(i, pos + p.text.length));
-                if (slice) html += p.italic ? `<em>${slice}</em>` : slice;
-                pos += p.text.length;
-            }
-            el.innerHTML = html;
-            i++;
-            setTimeout(type, i === 1 ? 400 : 150);
-        } else {
-            setTimeout(() => { cursor.style.display = 'none'; }, 1200);
+    const parts = [{ text: 'Agostino', italic: true }, { text: ' Gnasso', italic: false }];
+    const baseDelay = 0.5;
+    const step = 0.08;
+    let idx = 0, html = '';
+    for (const p of parts) {
+        for (const ch of p.text) {
+            const delay = (baseDelay + idx * step).toFixed(2);
+            const inner = ch === ' ' ? '&nbsp;' : ch;
+            html += p.italic
+                ? `<em><span class="letter" style="animation-delay:${delay}s">${inner}</span></em>`
+                : `<span class="letter" style="animation-delay:${delay}s">${inner}</span>`;
+            idx++;
         }
     }
-    setTimeout(type, 600);
+    el.innerHTML = html;
 })();
 </script>
 </body>
