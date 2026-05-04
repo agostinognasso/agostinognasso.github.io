@@ -143,12 +143,8 @@
         }
         .hero-name em { font-style: italic; color: var(--gold); }
         .tw-cursor { display: none; }
-        #typewriter-name .scramble-letter {
-            display: inline-block;
-            transition: color .15s;
-        }
-        #typewriter-name .scramble-letter.scrambling { color: var(--gold); }
-        }
+        #typewriter-name { visibility: hidden; }
+        #name-particle-canvas { position: absolute; pointer-events: none; }
         .hero-tag {
             font-family: 'Cormorant Garamond', serif;
             font-size: clamp(1.1rem, 2.2vw, 1.7rem);
@@ -1422,53 +1418,102 @@ const mmenu = document.getElementById('mmenu');
 hbtn.addEventListener('click', () => mmenu.classList.toggle('open'));
 function closeMenu() { mmenu.classList.remove('open'); }
 
-/* ── Scramble reveal hero name ── */
+/* ── Particle assemble hero name ── */
 (function() {
-    const el = document.getElementById('typewriter-name');
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&';
-    const parts = [{ text: 'Agostino', italic: true }, { text: ' Gnasso', italic: false }];
-    const full = parts.map(p => p.text).join('');
+    const nameEl = document.getElementById('typewriter-name');
+    nameEl.innerHTML = '<em>Agostino</em> Gnasso';
 
-    // Build spans
-    let html = '', pos = 0;
-    for (const p of parts) {
-        for (const ch of p.text) {
-            const inner = ch === ' ' ? '&nbsp;' : '?';
-            const span = `<span class="scramble-letter" data-final="${ch === ' ' ? ' ' : ch}">${ch === ' ' ? '&nbsp;' : inner}</span>`;
-            html += p.italic ? `<em>${span}</em>` : span;
-            pos++;
-        }
-    }
-    el.innerHTML = html;
+    document.fonts.ready.then(() => setTimeout(run, 300));
 
-    const spans = el.querySelectorAll('.scramble-letter');
-    const totalLetters = spans.length;
-    const scrambleDuration = 8;  // frames of random chars per letter
-    const stepDelay = 60;        // ms between each letter resolving
+    function run() {
+        const rect = nameEl.getBoundingClientRect();
+        const W = Math.ceil(rect.width), H = Math.ceil(rect.height);
+        const dpr = window.devicePixelRatio || 1;
 
-    function scrambleLetter(span, finalChar, callback) {
-        let frame = 0;
-        span.classList.add('scrambling');
-        const iv = setInterval(() => {
-            if (frame < scrambleDuration) {
-                span.textContent = finalChar === ' ' ? ' ' : chars[Math.floor(Math.random() * chars.length)];
-                frame++;
-            } else {
-                clearInterval(iv);
-                span.textContent = finalChar === ' ' ? ' ' : finalChar;
-                span.classList.remove('scrambling');
-                if (callback) callback();
+        const off = document.createElement('canvas');
+        off.width = W * dpr; off.height = H * dpr;
+        const offCtx = off.getContext('2d');
+        offCtx.scale(dpr, dpr);
+        const fs = parseFloat(getComputedStyle(nameEl).fontSize);
+        const baseline = fs * 0.82;
+
+        offCtx.font = `italic ${fs}px 'Cormorant Garamond', serif`;
+        offCtx.fillStyle = '#c8a040';
+        const agW = offCtx.measureText('Agostino').width;
+        offCtx.fillText('Agostino', 0, baseline);
+
+        offCtx.font = `${fs}px 'Cormorant Garamond', serif`;
+        offCtx.fillStyle = '#d4c5a9';
+        offCtx.fillText(' Gnasso', agW, baseline);
+
+        const imgData = offCtx.getImageData(0, 0, off.width, off.height).data;
+        const particles = [];
+        const step = Math.max(2, Math.floor(dpr * 2));
+
+        for (let y = 0; y < off.height; y += step) {
+            for (let x = 0; x < off.width; x += step) {
+                const i = (y * off.width + x) * 4;
+                if (imgData[i + 3] > 80) {
+                    const tx = x / dpr, ty = y / dpr;
+                    const angle = Math.random() * Math.PI * 2;
+                    const dist = 200 + Math.random() * 400;
+                    particles.push({
+                        tx, ty,
+                        x: tx + Math.cos(angle) * dist,
+                        y: ty + Math.sin(angle) * dist,
+                        r: imgData[i], g: imgData[i+1], b: imgData[i+2],
+                        size: 1.2 + Math.random() * 0.8,
+                        delay: Math.random() * 0.3,
+                    });
+                }
             }
-        }, 40);
-    }
+        }
 
-    setTimeout(() => {
-        spans.forEach((span, i) => {
-            setTimeout(() => {
-                scrambleLetter(span, span.dataset.final);
-            }, i * stepDelay);
-        });
-    }, 400);
+        const canvas = document.createElement('canvas');
+        canvas.id = 'name-particle-canvas';
+        canvas.width = W * dpr; canvas.height = H * dpr;
+        canvas.style.left = '0'; canvas.style.top = '0';
+        canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+
+        const wrapper = document.createElement('div');
+        wrapper.style.cssText = 'position:relative;display:inline-block;';
+        nameEl.parentNode.insertBefore(wrapper, nameEl);
+        wrapper.appendChild(nameEl);
+        wrapper.appendChild(canvas);
+
+        const ctx = canvas.getContext('2d');
+        ctx.scale(dpr, dpr);
+
+        const duration = 1800;
+        const start = performance.now();
+
+        function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+
+        function animate(now) {
+            const raw = (now - start) / duration;
+            ctx.clearRect(0, 0, W, H);
+            let done = true;
+            for (const p of particles) {
+                const t = Math.max(0, Math.min((raw - p.delay) / (1 - p.delay), 1));
+                if (t < 1) done = false;
+                const e = easeOut(t);
+                const cx = p.x + (p.tx - p.x) * e;
+                const cy = p.y + (p.ty - p.y) * e;
+                ctx.fillStyle = `rgba(${p.r},${p.g},${p.b},${Math.min(t * 2, 1)})`;
+                ctx.fillRect(cx, cy, p.size, p.size);
+            }
+            if (!done) {
+                requestAnimationFrame(animate);
+            } else {
+                nameEl.style.visibility = 'visible';
+                canvas.style.transition = 'opacity 0.4s';
+                canvas.style.opacity = '0';
+                setTimeout(() => canvas.remove(), 400);
+            }
+        }
+
+        requestAnimationFrame(animate);
+    }
 })();
 </script>
 </body>
