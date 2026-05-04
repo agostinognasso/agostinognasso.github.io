@@ -143,15 +143,60 @@
         }
         .hero-name em { font-style: italic; color: var(--gold); }
         .tw-cursor { display: none; }
-        .hero-name .letter {
+        #typewriter-name {
+            position: relative;
             display: inline-block;
-            opacity: 0;
-            transform: translateY(-18px);
-            filter: blur(8px);
-            animation: letter-in .6s cubic-bezier(.22,1,.36,1) forwards;
         }
-        @keyframes letter-in {
-            to { opacity: 1; transform: translateY(0); filter: blur(0); }
+        #typewriter-name.glitch {
+            animation: glitch-main 2.4s ease-out forwards;
+        }
+        #typewriter-name.glitch::before,
+        #typewriter-name.glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            overflow: hidden;
+        }
+        #typewriter-name.glitch::before {
+            color: #c8f0ff;
+            animation: glitch-top 2.4s ease-out forwards;
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+        }
+        #typewriter-name.glitch::after {
+            color: var(--gold);
+            animation: glitch-bot 2.4s ease-out forwards;
+            clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+        }
+        @keyframes glitch-main {
+            0%   { opacity: 0; transform: skewX(0deg); }
+            5%   { opacity: 1; transform: skewX(-4deg) translateX(4px); }
+            10%  { transform: skewX(3deg) translateX(-3px); }
+            15%  { transform: skewX(-2deg) translateX(2px); }
+            25%  { transform: skewX(1deg) translateX(-1px); }
+            40%  { transform: skewX(0deg) translateX(0); }
+            60%  { opacity: 1; }
+            100% { opacity: 1; transform: none; }
+        }
+        @keyframes glitch-top {
+            0%   { opacity: 0; transform: translateX(0); }
+            5%   { opacity: 1; transform: translateX(-8px); }
+            10%  { transform: translateX(6px); }
+            15%  { transform: translateX(-4px); }
+            25%  { transform: translateX(2px); }
+            40%  { transform: translateX(0); }
+            70%  { opacity: .6; }
+            100% { opacity: 0; transform: translateX(0); }
+        }
+        @keyframes glitch-bot {
+            0%   { opacity: 0; transform: translateX(0); }
+            5%   { opacity: 1; transform: translateX(8px); }
+            10%  { transform: translateX(-6px); }
+            15%  { transform: translateX(4px); }
+            25%  { transform: translateX(-2px); }
+            40%  { transform: translateX(0); }
+            70%  { opacity: .6; }
+            100% { opacity: 0; transform: translateX(0); }
         }
         .hero-tag {
             font-family: 'Cormorant Garamond', serif;
@@ -1426,24 +1471,12 @@ const mmenu = document.getElementById('mmenu');
 hbtn.addEventListener('click', () => mmenu.classList.toggle('open'));
 function closeMenu() { mmenu.classList.remove('open'); }
 
-/* ── Letter dissolve hero name ── */
+/* ── Glitch reveal hero name ── */
 (function() {
     const el = document.getElementById('typewriter-name');
-    const parts = [{ text: 'Agostino', italic: true }, { text: ' Gnasso', italic: false }];
-    const baseDelay = 0.5;
-    const step = 0.08;
-    let idx = 0, html = '';
-    for (const p of parts) {
-        for (const ch of p.text) {
-            const delay = (baseDelay + idx * step).toFixed(2);
-            const inner = ch === ' ' ? '&nbsp;' : ch;
-            html += p.italic
-                ? `<em><span class="letter" style="animation-delay:${delay}s">${inner}</span></em>`
-                : `<span class="letter" style="animation-delay:${delay}s">${inner}</span>`;
-            idx++;
-        }
-    }
-    el.innerHTML = html;
+    el.innerHTML = '<em>Agostino</em> Gnasso';
+    el.setAttribute('data-text', 'Agostino Gnasso');
+    setTimeout(() => el.classList.add('glitch'), 500);
 })();
 </script>
 </body>
