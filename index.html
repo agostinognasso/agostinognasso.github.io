@@ -188,7 +188,9 @@
 
         /* ─── ABOUT ─── */
         #about { background: var(--navy-dark); }
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+        .about-grid { display: grid; grid-template-columns: 170px 1fr 1fr; gap: 4rem; align-items: start; }
+        .about-photo img { width: 100%; display: block; border: 1px solid rgba(200,160,64,0.3); filter: grayscale(15%); transition: filter .4s; }
+        .about-photo img:hover { filter: grayscale(0); }
         .about-text p { font-size: .95rem; line-height: 1.9; color: var(--text-sec); margin-bottom: 1.4rem; font-weight: 300; }
         .about-text strong { color: var(--text-prime); font-weight: 500; }
         .interests-label { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 1.5rem; }
@@ -515,7 +517,8 @@
             section { padding: 4rem 2rem; }
             #contact { padding: 5rem 2rem; }
             footer { padding: 1.5rem 2rem; flex-direction: column; gap: .75rem; text-align: center; }
-            .about-grid, .talks-grid, .summer-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .about-grid, .talks-grid, .summer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .about-photo { max-width: 140px; }
             .r-grid, .inst-grid, .service-grid { grid-template-columns: 1fr; }
             .course-grid { grid-template-columns: 1fr 1fr; }
             .proj-grid { grid-template-columns: 1fr; }
@@ -589,9 +592,9 @@
             <h1 class="hero-name"><span id="typewriter-name"></span><span class="tw-cursor">|</span></h1>
             <p class="hero-tag">Explaining the Unexplainable —<br>Machine Learning meets Statistical Interpretation</p>
             <p class="hero-desc">
-                Researcher in Explainable Machine Learning (XML) and applied statistics.
-                My work makes complex ensemble models interpretable, bridging
-                predictive power with genuine human understanding.
+                I work at the intersection of statistics and machine learning, developing methods
+                to make complex models genuinely understandable. Most of my research revolves around
+                ensemble models and the question of what they actually do.
             </p>
             <div class="hero-stats">
                 <div><div class="stat-n">5</div><div class="stat-l">Journal Articles</div></div>
@@ -609,10 +612,13 @@
             <h2 class="sec-title">About <em>Me</em></h2>
         </div>
         <div class="about-grid">
+            <div class="about-photo reveal">
+                <img src="personal.png" alt="Agostino Gnasso">
+            </div>
             <div class="about-text reveal">
-                <p>I am a <strong>Doctor of Economics</strong> from the University of Naples Federico II, specialising in the intersection of statistical methodology and machine learning interpretability. My research focuses on <strong>Explainable Machine Learning (XML)</strong> — building frameworks that make powerful black-box algorithms transparent, interpretable, and actionable for decision-makers.</p>
-                <p>My core contribution is the development of <strong>E2Tree</strong> (Explainable Ensemble Trees), a methodology that represents Random Forest and other ensemble models through interpretable decision tree structures, preserving predictive accuracy while delivering faithful explanations. This work spans both classification and regression contexts and has been published in leading statistical journals.</p>
-                <p>Beyond interpretability, I apply quantitative methods to <strong>health economics</strong> and <strong>social analytics</strong> — from predicting depression risk in survey data to evaluating hospital service quality. I am equally committed to open science: as a member of the <strong>K-Synth Research Lab</strong> and the <strong>Bibliometrix</strong> development team, I contribute to tools used by thousands of researchers worldwide for systematic literature reviews and science mapping.</p>
+                <p>I am a <strong>Doctor of Economics</strong> from the University of Naples Federico II. My research sits at the boundary between statistical methodology and machine learning, with a focus on <strong>Explainable Machine Learning</strong> — developing frameworks that make powerful black-box models transparent and interpretable, in ways that are meaningful for researchers and decision-makers alike.</p>
+                <p>The main thread of my work is <strong>E2Tree</strong> (Explainable Ensemble Trees), a method that represents Random Forests and other ensemble models through a single, interpretable tree structure. The goal is to produce explanations that are genuinely faithful to what the model does, in both classification and regression settings. Several papers from this line of work have appeared in leading statistical journals.</p>
+                <p>Beyond interpretability, I work on applied problems in health economics and social science — predicting depression from national survey data, evaluating hospital quality, and studying the relationship between scientific output and patient outcomes. I am part of the <strong>K-Synth Research Lab</strong> and contribute to <strong>Bibliometrix</strong>, an R package used by thousands of researchers worldwide for systematic literature reviews and science mapping.</p>
             </div>
             <div class="reveal">
                 <div class="interests-label">Research Interests</div>
@@ -644,32 +650,32 @@
             <div class="r-card reveal">
                 <div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="4" r="2"/><circle cx="6" cy="13" r="2"/><circle cx="18" cy="13" r="2"/><line x1="12" y1="6" x2="7.2" y2="11.3"/><line x1="12" y1="6" x2="16.8" y2="11.3"/><circle cx="3.5" cy="20.5" r="1.5"/><circle cx="8.5" cy="20.5" r="1.5"/><circle cx="15.5" cy="20.5" r="1.5"/><circle cx="20.5" cy="20.5" r="1.5"/><line x1="6" y1="14.8" x2="4.2" y2="19.2"/><line x1="6" y1="14.8" x2="8" y2="19.2"/><line x1="18" y1="14.8" x2="16.2" y2="19.2"/><line x1="18" y1="14.8" x2="20" y2="19.2"/></svg></div>
                 <h3 class="r-title">Explainable AI (XAI)</h3>
-                <p class="r-desc">Making black-box models transparent through interpretable tree structures and visual explanations. Development and extension of E2Tree — a global surrogate framework for ensemble models that delivers faithful, human-readable explanations across classification and regression contexts.</p>
+                <p class="r-desc">My main line of research. I develop methods — in particular E2Tree — that translate the internal logic of ensemble models like Random Forests into a single interpretable tree, covering both classification and regression settings.</p>
             </div>
             <div class="r-card reveal">
                 <div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><line x1="3" y1="3" x2="3" y2="21"/><line x1="3" y1="21" x2="21" y2="21"/><polyline points="5,16 8,10 12,13 16,7 20,9"/><circle cx="8" cy="10" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="13" r="1.4" fill="currentColor" stroke="none"/><circle cx="16" cy="7" r="1.4" fill="currentColor" stroke="none"/><polyline points="5,19 8,14 12,17 16,11 20,13" opacity="0.4"/><polyline points="5,17 8,12 12,15 16,9 20,11" opacity="0.2"/></svg></div>
                 <h3 class="r-title">Machine Learning &amp; Ensembles</h3>
-                <p class="r-desc">Random Forests, XGBoost, and ensemble methods with a focus on interpretability. Investigation of divergence measures and stochastic frameworks for evaluating model reconstruction quality — formalising the notion of interpretability quality itself.</p>
+                <p class="r-desc">Random Forests, XGBoost, and other ensemble methods, studied both for their predictive properties and their interpretability. Part of this work focuses on how to measure whether an explanation actually captures what a model does.</p>
             </div>
             <div class="r-card reveal">
                 <div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="2.5"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><line x1="5.7" y1="7.1" x2="10" y2="10.3"/><line x1="18.3" y1="7.1" x2="14" y2="10.3"/><line x1="5.7" y1="16.9" x2="10" y2="13.7"/><line x1="18.3" y1="16.9" x2="14" y2="13.7"/><line x1="4" y1="8" x2="4" y2="16"/><line x1="20" y1="8" x2="20" y2="16"/></svg></div>
                 <h3 class="r-title">Bibliometrics &amp; Science Mapping</h3>
-                <p class="r-desc">Quantitative analysis of scientific literature, citation networks, and research trends. Contributing to open-source tools (bibliometrix, Biblioshiny) used globally by researchers for systematic literature reviews and science mapping analysis.</p>
+                <p class="r-desc">Quantitative analysis of scientific literature, citation networks, and research trends. I contribute to bibliometrix and Biblioshiny, open-source R tools used by researchers worldwide for systematic literature reviews and science mapping.</p>
             </div>
             <div class="r-card reveal">
                 <div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,12 5,12 7,6 9,18 12,9 14,14 16,12 19,12 23,12"/></svg></div>
                 <h3 class="r-title">Applied Health Analytics</h3>
-                <p class="r-desc">Application of ML interpretability to clinical and health survey data: depression prediction, hospital service quality evaluation, and evidence-based decision support. Research within the PRIN-funded SciK-Health and AHS Centres projects.</p>
+                <p class="r-desc">Applying machine learning to health and clinical data: depression prediction from national survey data, hospital service quality evaluation, and the relationship between research output and patient outcomes. Part of two PRIN-funded national projects.</p>
             </div>
             <div class="r-card reveal">
                 <div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><line x1="3" y1="3" x2="3" y2="21"/><line x1="3" y1="21" x2="21" y2="21"/><polyline points="6,17 9,12 13,15 18,7"/><circle cx="6" cy="17" r="1.3" fill="currentColor" stroke="none"/><circle cx="9" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="13" cy="15" r="1.3" fill="currentColor" stroke="none"/><circle cx="18" cy="7" r="1.3" fill="currentColor" stroke="none"/></svg></div>
                 <h3 class="r-title">Applied Economics</h3>
-                <p class="r-desc">Statistical and machine learning methods applied to economic phenomena: composite indicators, stochastic evaluation frameworks, and policy-relevant analysis of public sector performance. Bridge between advanced methodology and applied economic research.</p>
+                <p class="r-desc">Statistical and machine learning methods applied to economic questions — composite indicators, stochastic evaluation frameworks, and public sector performance analysis. The common thread is bringing methodological rigour to problems that matter for policy.</p>
             </div>
             <div class="r-card reveal">
                 <div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3 C8.8 7 8.8 17 12 21 C15.2 17 15.2 7 12 3"/><circle cx="5.5" cy="7.5" r="1.5" fill="currentColor" stroke="none"/><circle cx="18.5" cy="16.5" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="5" r="1.5" fill="currentColor" stroke="none"/><line x1="6.5" y1="8.2" x2="17.5" y2="15.8" stroke-dasharray="2,2"/></svg></div>
                 <h3 class="r-title">Applied Quantitative Methods</h3>
-                <p class="r-desc">Cross-domain application of quantitative methods to heterogeneous data — from social surveys and bibliographic corpora to environmental and geophysical datasets. Flexible methodological approach spanning economics, social science, and natural science contexts.</p>
+                <p class="r-desc">Applying quantitative methods across disciplines — from social surveys and bibliographic databases to environmental and geophysical data. Some of the most interesting problems sit at the boundary between fields, and that is where I find myself most often.</p>
             </div>
         </div>
     </section>
@@ -1063,15 +1069,15 @@
                 <span class="soft-badge">CRAN v0.2.0</span>
             </div>
             <div class="soft-subtitle">Explainable Ensemble Trees</div>
-            <p class="soft-desc">The <code>e2tree</code> package implements the <strong>Explainable Ensemble Trees (E2Tree)</strong> methodology — a global surrogate model designed to approximate the prediction mechanism of tree-based ensembles (Random Forests, XGBoost, Boosting) through a single, interpretable tree structure. Unlike CART trees that optimise a loss function directly on data, E2Tree learns the relational structure established by the black-box model by extracting a co-occurrence matrix from the trained ensemble and applying hierarchical clustering to construct a transparent dendrogram.</p>
+            <p class="soft-desc">The <code>e2tree</code> package implements the <strong>Explainable Ensemble Trees (E2Tree)</strong> methodology. Rather than fitting a CART tree directly on raw data, E2Tree learns the relational structure that the ensemble has already established: it extracts a co-occurrence matrix from the trained model and uses hierarchical clustering to build a transparent, interpretable dendrogram. The result is a global surrogate that faithfully approximates Random Forests, XGBoost, and other boosting models.</p>
             <div class="soft-features">
                 <h4>Key Features</h4>
                 <ul class="feature-list">
-                    <li><strong>Global Interpretability</strong> — converts complex ensemble models into a single explanatory tree</li>
-                    <li><strong>Dual Mode</strong> — supports Classification (frequency-based connectivity) and Regression (weighted connectivity)</li>
-                    <li><strong>Visual Insights</strong> — dendrogram-like visualisations and clear decision rules for each cluster</li>
-                    <li><strong>XGBoost Support</strong> — extended to gradient boosting in v0.2.0</li>
-                    <li><strong>rpart Integration</strong> — outputs compatible with rpart objects for seamless downstream analysis</li>
+                    <li><strong>Global interpretability:</strong> converts ensemble models into a single explanatory tree</li>
+                    <li><strong>Classification and regression:</strong> frequency-based and weighted connectivity modes</li>
+                    <li><strong>Visual output:</strong> dendrogram-like visualisations with decision rules for each cluster</li>
+                    <li><strong>XGBoost support:</strong> extended to gradient boosting in v0.2.0</li>
+                    <li><strong>rpart integration:</strong> outputs compatible with rpart objects</li>
                 </ul>
             </div>
             <div class="code-block"><span class="comment"># Stable version from CRAN</span>
@@ -1101,7 +1107,7 @@ devtools::<span class="fn">install_github</span>("agostinognasso/e2tree")</div>
                 <h4>Key Features</h4>
                 <ul class="feature-list">
                     <li>Import and convert data from <strong>7+ bibliographic databases</strong></li>
-                    <li>Descriptive bibliometric analysis — author productivity, citation analysis, h-index</li>
+                    <li>Descriptive bibliometric analysis: author productivity, citation networks, h-index</li>
                     <li>Network matrices for co-citation, coupling, collaboration, and co-word analysis</li>
                     <li>Thematic maps, thematic evolution plots, and conceptual structure visualisations</li>
                     <li>Interactive web interface via <strong>Biblioshiny</strong> for non-coders</li>
@@ -1123,13 +1129,13 @@ devtools::<span class="fn">install_github</span>("agostinognasso/e2tree")</div>
             <div class="proj-card reveal">
                 <div class="proj-type">PRIN 2022 · MUR National Research</div>
                 <div class="proj-title">SciK-Health</div>
-                <p class="proj-desc"><em>Mapping Scientific Knowledge about Health for Decision-Making</em> — 24-month PRIN project exploring the intersection of bibliometrics, knowledge synthesis, and health policy (Code: 2022825Y5E, PI: Prof. Massimo Aria). Role: Junior Researcher.</p>
+                <p class="proj-desc"><em>Mapping Scientific Knowledge about Health for Decision-Making.</em> 24-month PRIN project at the intersection of bibliometrics, knowledge synthesis, and health policy (Code: 2022825Y5E, PI: Prof. Massimo Aria). Junior Researcher.</p>
                 <div class="proj-per">2023 – 2026</div>
             </div>
             <div class="proj-card reveal">
                 <div class="proj-type">PRIN 2022 PNRR · MUR National Research</div>
                 <div class="proj-title">AHS Centres</div>
-                <p class="proj-desc"><em>The value of scientific production for patient care in Academic Health Science Centres</em> — evaluating the relationship between research excellence and clinical outcomes across Italian public hospitals (PI: Prof. Corrado Cuccurullo). Role: Junior Researcher.</p>
+                <p class="proj-desc"><em>The value of scientific production for patient care in Academic Health Science Centres.</em> A study on the relationship between research output and clinical outcomes across Italian public hospitals (PI: Prof. Corrado Cuccurullo). Junior Researcher.</p>
                 <div class="proj-per">2023 – 2026</div>
             </div>
         </div>
@@ -1141,19 +1147,19 @@ devtools::<span class="fn">install_github</span>("agostinognasso/e2tree")</div>
             <div class="sec-num">07</div>
             <h2 class="sec-title">Network &amp; <em>Affiliations</em></h2>
         </div>
-        <p class="network-intro reveal">My academic journey is built on strong collaborations with leading research institutions and a vibrant network of colleagues working at the frontier of statistics, machine learning, and data science.</p>
+        <p class="network-intro reveal">I work with researchers across several institutions in Italy and abroad, with shared interests in statistics, machine learning, and the methodological problems that sit between them.</p>
 
         <div class="interests-label reveal" style="margin-bottom:1.5rem;">Institutions &amp; Research Groups</div>
         <div class="inst-grid">
             <div class="inst-card reveal">
                 <div class="inst-name"><a href="http://www.unina.it" target="_blank">University of Naples Federico II</a></div>
                 <div class="inst-role">PhD &amp; Research Home</div>
-                <div class="inst-desc">The oldest public non-sectarian university in the world, where I conduct primary research in Economics and Statistics.</div>
+                <div class="inst-desc">The oldest public non-sectarian university in the world, and where most of my research takes place.</div>
             </div>
             <div class="inst-card reveal">
                 <div class="inst-name"><a href="http://www.dises.unina.it" target="_blank">DISES</a></div>
                 <div class="inst-role">Department of Economics and Statistics</div>
-                <div class="inst-desc">My home department — a hub of excellence for economic and statistical research in Southern Italy.</div>
+                <div class="inst-desc">My home department, with a strong tradition in economic and statistical research.</div>
             </div>
             <div class="inst-card reveal">
                 <div class="inst-name"><a href="https://www.k-synth.unina.it" target="_blank">K-Synth</a></div>
@@ -1173,7 +1179,7 @@ devtools::<span class="fn">install_github</span>("agostinognasso/e2tree")</div>
             <div class="inst-card reveal">
                 <div class="inst-name"><a href="http://www.nse.unina.it" target="_blank">Naples School of Economics</a></div>
                 <div class="inst-role">PhD Program</div>
-                <div class="inst-desc">International PhD program fostering advanced research in economics and finance.</div>
+                <div class="inst-desc">The PhD program I completed, with a strong international dimension in economics and finance.</div>
             </div>
         </div>
 
@@ -1290,7 +1296,7 @@ devtools::<span class="fn">install_github</span>("agostinognasso/e2tree")</div>
             <div class="process-step reveal">
                 <div class="step-num">4</div>
                 <div class="step-title">Delivery &amp; Support</div>
-                <p class="step-desc">You receive the final deliverables — reports, code, models — along with documentation and follow-up support.</p>
+                <p class="step-desc">You receive the final output — reports, code, models — with documentation and follow-up support as needed.</p>
             </div>
         </div>
 
@@ -1305,7 +1311,7 @@ devtools::<span class="fn">install_github</span>("agostinognasso/e2tree")</div>
 
         <div class="cta-box reveal">
             <h3>Let's Work Together</h3>
-            <p>Have a project in mind? I'd be happy to discuss how I can help.</p>
+            <p>If you have a project in mind, feel free to reach out.</p>
             <a class="btn-gold" href="mailto:agostino.gnasso@unina.it">Get in Touch</a>
         </div>
     </section>
@@ -1313,7 +1319,7 @@ devtools::<span class="fn">install_github</span>("agostinognasso/e2tree")</div>
     <!-- ── CONTACT ── -->
     <section id="contact">
         <div class="reveal">
-            <p class="contact-intro">Let's connect — for collaborations, research discussions, or academic inquiries.</p>
+            <p class="contact-intro">I am always happy to hear from colleagues, collaborators, or anyone with a methodologically interesting problem.</p>
             <a class="contact-email" href="mailto:agostino.gnasso@unina.it">agostino.gnasso@unina.it</a>
             <div class="contact-links">
                 <a class="clink" href="https://linkedin.com/in/agostino-gnasso" target="_blank">LinkedIn</a>
@@ -1334,7 +1340,7 @@ devtools::<span class="fn">install_github</span>("agostinognasso/e2tree")</div>
     </section>
 
     <footer>
-        <span class="ft">© 2025 Agostino Gnasso · University of Naples Federico II</span>
+        <span class="ft">© 2026 Agostino Gnasso · University of Naples Federico II</span>
         <span class="ft">Doctor of Economics · Explainable Machine Learning</span>
     </footer>
 
@@ -1434,7 +1440,7 @@ function closeMenu() { mmenu.classList.remove('open'); }
             }
             el.innerHTML = html;
             i++;
-            setTimeout(type, i === 1 ? 400 : 120);
+            setTimeout(type, i === 1 ? 400 : 100);
         } else {
             setTimeout(() => { cursor.style.display = 'none'; }, 1000);
         }
